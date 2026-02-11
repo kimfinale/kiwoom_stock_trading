@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "total_value": 99954815,
+    "daily_pnl": 0,
+    "daily_return": 0.0,
+    "total_pnl": -45185,
+    "total_return": -0.05,
+    "cash": 95964080,
+    "cash_percent": 96.01
+  },
+  "history": [
+    {
+      "date": "2026-02-11",
+      "value": 99954815
+    }
+  ],
+  "holdings": [
+    {
+      "name": "삼성전자",
+      "symbol": "005930",
+      "sector": "Unknown",
+      "quantity": 24,
+      "avg_price": 167577,
+      "current_price": 167200,
+      "value": 4012800,
+      "pnl": -45185,
+      "pnl_percent": -1.12,
+      "account": "Account 8119599511"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Account 7032756831",
+      "total_value": 0,
+      "cash": 0,
+      "equity": 0
+    },
+    {
+      "name": "Account 8119599511",
+      "total_value": 99954815,
+      "cash": 95964080,
+      "equity": 4012800
+    }
+  ]
+}

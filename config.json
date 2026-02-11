@@ -1,0 +1,30 @@
+{
+    "accounts": {
+        "Account1": "YOUR_ACCOUNT_NUMBER_HERE",
+        "Account2": "YOUR_ACCOUNT_NUMBER_HERE",
+        "Account3": "YOUR_ACCOUNT_NUMBER_HERE",
+        "Account4": "YOUR_ACCOUNT_NUMBER_HERE",
+        "Account5": "YOUR_ACCOUNT_NUMBER_HERE"
+    },
+    "stocks": [
+        {
+            "code": "005930",
+            "name": "Samsung Electronics"
+        }
+    ],
+    "strategy": {
+        "P": 0.02,
+        "D": 0.02,
+        "R": 0.05,
+        "buy_interval_minutes": 5,
+        "allocation_ratio": {
+            "Account1": 0.3,
+            "Account2": 0.175,
+            "Account3": 0.175,
+            "Account4": 0.175,
+            "Account5": 0.175
+        }
+    },
+    "total_capital": 1000000,
+    "dry_run": true
+}
