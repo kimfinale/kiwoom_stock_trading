@@ -24,7 +24,6 @@ DEFAULT_PORTFOLIO = {
 
 OUTPUT_DIR = "outputs"
 PORTFOLIO_FILE = os.path.join(OUTPUT_DIR, "portfolio.json")
-MAX_HISTORY_DAYS = 60
 
 def load_portfolio(filepath=PORTFOLIO_FILE):
     if os.path.exists(filepath):
@@ -49,19 +48,19 @@ def fetch_and_generate_portfolio(kiwoom):
     if not accounts_list:
         print("No accounts found.")
         return False
-
+    
     # Load Config for Sector Map & Virtual Accounts
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(script_dir, "config.json")
     print(f"Loading config from: {config_path}")
     sector_map = {}
     config = {}
-
+    
     if os.path.exists(config_path):
         try:
             with open(config_path, "r", encoding="utf-8") as f:
                 config = json.load(f)
-
+            
             # Build Sector Map
             if "strategies" in config:
                 for strategy in config["strategies"]:
@@ -76,22 +75,22 @@ def fetch_and_generate_portfolio(kiwoom):
     total_equity_all = 0
     total_pnl_all = 0 # Total Inception PnL
     daily_pnl_all = 0
-
+    
     holdings_list = []
     accounts_data = []
-
+    
     # Iterate accounts
     for acc in accounts_list:
         if not acc: continue
         if acc == '7032756831': continue # Skip unused account
         print(f"Processing Account: {acc}")
-
+        
         # 1. Get Cash (Deposit)
         # opw00001
         kiwoom.get_deposit(acc)
         cash = kiwoom.tr_data
         if cash is None: cash = 0
-
+        
         # 2. Get Evaluation & Holdings
         # opw00018
         data = kiwoom.get_account_evaluation(acc)
@@ -99,7 +98,7 @@ def fetch_and_generate_portfolio(kiwoom):
             print(f"Failed to get evaluation for {acc} (Data: {data})")
             # Add partial data if possible or skip
             accounts_data.append({
-                "name": f"Account {acc}",
+                "name": f"Account {acc}", 
                 "total_value": cash,
                 "cash": cash,
                 "equity": 0
@@ -107,58 +106,58 @@ def fetch_and_generate_portfolio(kiwoom):
             total_value += cash
             total_cash_all += cash
             continue
-
+            
         summary = data['summary']
         acc_holdings = data['holdings']
-
+        
         # Extract Summary Data
         equity = summary['total_eval']
         acc_total_value = summary['estimated_assets']
-
+        
         acc_equity = equity
-        acc_total_val = summary['estimated_assets']
-        acc_cash = acc_total_val - acc_equity  # Derive cash to ensure consistency
-
+        acc_cash = cash 
+        acc_total_val = summary['estimated_assets'] 
+        
         # Update Global Totals
         total_value += acc_total_val
         total_cash_all += acc_cash
         total_equity_all += acc_equity
         total_pnl_all += summary['total_profit_loss']
         daily_pnl_all += summary.get('daily_pnl', 0)
-
+        
         accounts_data.append({
             "name": f"Account {acc}",
             "total_value": acc_total_val,
             "cash": acc_cash,
             "equity": acc_equity
         })
-
+        
         # Process Holdings
         for h in acc_holdings:
             code = h['code']
             sector = sector_map.get(code, "Unknown")
-
+            
             holding_entry = {
                 "name": h['name'],
                 "symbol": code,
-                "sector": sector,
+                "sector": sector, 
                 "quantity": h['qty'],
                 "avg_price": h['buy_price'],
                 "current_price": h['current_price'],
-                "value": h['current_price'] * h['qty'],
+                "value": h['current_price'] * h['qty'], 
                 "pnl": h['eval_profit'],
                 "pnl_percent": h['yield_rate'],
                 "account": f"Account {acc}"
             }
             holdings_list.append(holding_entry)
-
-        time.sleep(0.3)
+            
+        time.sleep(0.3) 
 
     # Calculate Global Summaries
     if total_value > 0:
         cash_percent = round((total_cash_all / total_value) * 100, 2)
-        total_rate = round((total_pnl_all / (total_value - total_pnl_all)) * 100, 2)
-
+        total_rate = round((total_pnl_all / (total_value - total_pnl_all)) * 100, 2) 
+        
         start_value_day = total_value - daily_pnl_all
         daily_return = 0.0
         if start_value_day > 0:
@@ -177,16 +176,16 @@ def fetch_and_generate_portfolio(kiwoom):
         "cash": total_cash_all,
         "cash_percent": cash_percent
     }
-
+    
     # Load and Update History
     portfolio = load_portfolio()
     history = portfolio.get("history", [])
-
+    
     today_str = datetime.date.today().strftime("%Y-%m-%d")
-
+    
     # Check if today exists, update it if so, else append
     todays_entry = next((item for item in history if item["date"] == today_str), None)
-
+    
     if todays_entry:
         todays_entry["value"] = total_value
     else:
@@ -194,151 +193,90 @@ def fetch_and_generate_portfolio(kiwoom):
             "date": today_str,
             "value": total_value
         })
-
-    # Sort history by date and limit to last 60 days
+        
+    # Sort history by date
     history.sort(key=lambda x: x['date'])
-    if len(history) > MAX_HISTORY_DAYS:
-        history = history[-MAX_HISTORY_DAYS:]
-
+    
     # --- Virtual Accounts Logic ---
     virtual_accounts_data = []
-
-    # Load trade_state.json for actual per-virtual-account holdings
-    trade_state_path = os.path.join(script_dir, "trade_state.json")
-    trade_state = []
-    if os.path.exists(trade_state_path):
+    
+    # Load config for ratios
+    config_path = "config.json"
+    if os.path.exists(config_path):
         try:
-            with open(trade_state_path, "r", encoding="utf-8") as f:
-                trade_state = json.load(f)
-            print(f"Loaded trade_state.json with {len(trade_state)} virtual accounts")
-        except Exception as e:
-            print(f"Error loading trade_state.json: {e}")
-
-    if trade_state:
-        try:
-            # Build current price map from Kiwoom holdings data
-            current_price_map = {}
-            for h in holdings_list:
-                current_price_map[h['symbol']] = h['current_price']
-
-            # Build sector map from config strategies
-            strategy_sector_map = {}
-            if config and "strategies" in config:
-                for strategy in config["strategies"]:
-                    strategy_sector_map[strategy["id"]] = strategy.get("sector", "Unknown")
-
-            target_acc_name = f"Account {config.get('real_account_id', '8119599511')}"
-
-            for va in trade_state:
-                v_name = va.get("account_id", "")
-                v_balance = va.get("balance", 0)
-                v_holdings = va.get("holdings", {})
-                v_principal = va.get("principal", 0)
-                stock_code = va.get("stock_code", "")
-
-                # Calculate equity using current market prices
-                v_equity = 0
-                v_cost = 0
-                for code, holding in v_holdings.items():
-                    qty = holding.get("qty", 0)
-                    cur_price = current_price_map.get(code, holding.get("avg_price", 0))
-                    v_equity += qty * cur_price
-                    v_cost += holding.get("total_cost", 0)
-
-                v_cash = int(v_balance)
-                v_total = v_cash + v_equity
-                v_pnl = v_equity - v_cost  # PnL = market value - cost basis
-
-                # Extract strategy ID from account_id (e.g., "Samsung_1" -> "Samsung")
-                strategy_id = "_".join(v_name.split("_")[:-1]) if "_" in v_name else v_name
-                sector = strategy_sector_map.get(strategy_id, "Unknown")
-
-                # Get allocation ratio from strategy config
-                s_config = va.get("strategy_config", {})
-                ratio = s_config.get("ratio", 0)
-                # Find strategy allocation percent
-                s_alloc = 0.1  # default
-                if config and "strategies" in config:
-                    for strategy in config["strategies"]:
-                        if strategy["id"] == strategy_id:
-                            s_alloc = strategy.get("total_allocation_percent", 0.1)
-                            break
-
-                # Extract strategy params
-                strategy_type = s_config.get("strategy_type", "")
-                params = s_config.get("params", {})
-                target_profit = params.get("target_profit", 0)
-                dip = params.get("dip", 0)
-
-                virtual_accounts_data.append({
-                    "name": v_name,
-                    "real_account_ref": target_acc_name,
-                    "allocation_ratio": ratio * s_alloc,
-                    "strategy_type": strategy_type,
-                    "rise_pct": round(target_profit * 100, 1),
-                    "dip_pct": round(dip * 100, 1),
-                    "total_value": v_total,
-                    "cash": v_cash,
-                    "equity": v_equity,
-                    "total_pnl": v_pnl,
-                    "sector": sector
-                })
-
-        except Exception as e:
-            print(f"Error processing virtual accounts from trade_state: {e}")
-    elif config:
-        # Fallback: old ratio-based splitting if no trade_state.json
-        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                config = json.load(f)
+            
             target_acc_data = None
-            target_id = config.get("real_account_id", "8119599511")
+            target_id = "8119599511"
+            
+            # Find the account data to split
             for ad in accounts_data:
                 if target_id in ad['name']:
                     target_acc_data = ad
                     break
+            
             if not target_acc_data and accounts_data:
-                target_acc_data = accounts_data[0]
-
+                target_acc_data = accounts_data[0] # Fallback
+                
             if target_acc_data and "strategies" in config:
-                stock_value_map = {}
-                stock_cost_map = {}
-                stock_pnl_map = {}
-                for h in holdings_list:
-                    code = h.get('symbol', '')
-                    stock_value_map[code] = h['value']
-                    stock_cost_map[code] = h['avg_price'] * h['quantity']
-                    stock_pnl_map[code] = h['pnl']
-
-                total_capital = config.get("total_capital", target_acc_data.get('total_value', 0))
-
+                base_total_value = target_acc_data.get('total_value', 0)
+                base_cash = target_acc_data.get('cash', 0)
+                base_equity = target_acc_data.get('equity', 0)
+                base_pnl = total_pnl_all 
+                
+                # New Logic: Iterate Strategies
                 for strategy in config["strategies"]:
                     s_id = strategy["id"]
                     s_alloc = strategy["total_allocation_percent"]
-                    stock_code = strategy.get("stock_code", "")
-                    strategy_capital = total_capital * s_alloc
-                    actual_stock_value = stock_value_map.get(stock_code, 0)
-                    actual_stock_cost = stock_cost_map.get(stock_code, 0)
-                    actual_stock_pnl = stock_pnl_map.get(stock_code, 0)
-                    strategy_cash = strategy_capital - actual_stock_cost
-
+                    
+                    s_val = base_total_value * s_alloc
+                    s_cash = base_cash * s_alloc
+                    s_equity = base_equity * s_alloc
+                    s_pnl = base_pnl * s_alloc
+                    
                     for acc in strategy["accounts"]:
                         ratio = acc["ratio"]
                         suffix = acc["suffix"]
                         v_name = f"{s_id}_{suffix}"
-                        v_equity = int(actual_stock_value * ratio)
-                        v_cash = int(strategy_cash * ratio)
-                        v_pnl = int(actual_stock_pnl * ratio)
-                        v_val = v_cash + v_equity
-
+                        
+                        v_val = int(s_val * ratio)
+                        v_cash = int(s_cash * ratio)
+                        v_equity = int(s_equity * ratio)
+                        v_pnl = int(s_pnl * ratio)
+                        
                         virtual_accounts_data.append({
-                            "name": v_name,
+                            "name": v_name, 
                             "real_account_ref": target_acc_data['name'],
-                            "allocation_ratio": ratio * s_alloc,
+                            "allocation_ratio": ratio * s_alloc, 
                             "total_value": v_val,
                             "cash": v_cash,
                             "equity": v_equity,
                             "total_pnl": v_pnl,
                             "sector": strategy.get("sector", "Unknown")
                         })
+            elif target_acc_data and "strategy" in config:
+                ratios = config["strategy"].get("allocation_ratio", {})
+                base_total_value = target_acc_data.get('total_value', 0)
+                base_cash = target_acc_data.get('cash', 0)
+                base_equity = target_acc_data.get('equity', 0)
+                base_pnl = total_pnl_all 
+                
+                for account_name, ratio in ratios.items():
+                    v_val = int(base_total_value * ratio)
+                    v_cash = int(base_cash * ratio)
+                    v_equity = int(base_equity * ratio)
+                    v_pnl = int(base_pnl * ratio)
+                    
+                    virtual_accounts_data.append({
+                        "name": account_name, 
+                        "real_account_ref": target_acc_data['name'],
+                        "allocation_ratio": ratio,
+                        "total_value": v_val,
+                        "cash": v_cash,
+                        "equity": v_equity,
+                        "total_pnl": v_pnl
+                    })
 
         except Exception as e:
             print(f"Error processing virtual accounts: {e}")
@@ -351,11 +289,11 @@ def fetch_and_generate_portfolio(kiwoom):
         "accounts": accounts_data,
         "virtual_accounts": virtual_accounts_data
     }
-
+    
     # Save
     with open(PORTFOLIO_FILE, "w", encoding="utf-8") as f:
         json.dump(final_json, f, ensure_ascii=False, indent=2)
-
+        
     print(f"Successfully generated {PORTFOLIO_FILE}")
     print(json.dumps(final_json, indent=2, ensure_ascii=False))
     return True
@@ -366,7 +304,7 @@ def main():
     print("Connecting to Kiwoom API...")
     kiwoom.comm_connect()
     time.sleep(1)
-
+    
     fetch_and_generate_portfolio(kiwoom)
 
 if __name__ == "__main__":

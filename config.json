@@ -1,30 +1,931 @@
 {
-    "accounts": {
-        "Account1": "YOUR_ACCOUNT_NUMBER_HERE",
-        "Account2": "YOUR_ACCOUNT_NUMBER_HERE",
-        "Account3": "YOUR_ACCOUNT_NUMBER_HERE",
-        "Account4": "YOUR_ACCOUNT_NUMBER_HERE",
-        "Account5": "YOUR_ACCOUNT_NUMBER_HERE"
+    "total_capital": 100000000,
+    "real_account_id": "8119599511",
+    "dry_run": false,
+    "ignore_market_hours": false,
+    "execution_intervals": {
+        "check_interval_minutes": 1,
+        "leader_buy_interval_minutes": 20,
+        "dashboard_interval_minutes": 10
     },
-    "stocks": [
+    "strategies": [
         {
-            "code": "005930",
-            "name": "Samsung Electronics"
+            "id": "Samsung",
+            "stock_code": "005930",
+            "stock_name": "Samsung Electronics",
+            "sector": "Electronics",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.02
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "LGUplus",
+            "stock_code": "032640",
+            "stock_name": "LGUplus",
+            "sector": "Telecom",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Krafton",
+            "stock_code": "259960",
+            "stock_name": "Krafton",
+            "sector": "Games",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "KT",
+            "stock_code": "030200",
+            "stock_name": "KT",
+            "sector": "Telecom",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "KEPCO",
+            "stock_code": "015760",
+            "stock_name": "KEPCO",
+            "sector": "Utilities",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "SKHynix",
+            "stock_code": "000660",
+            "stock_name": "SKHynix",
+            "sector": "Electronics",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "HyundaiGlovis",
+            "stock_code": "086280",
+            "stock_name": "HyundaiGlovis",
+            "sector": "Logistics",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "HyundaiRotem",
+            "stock_code": "064350",
+            "stock_name": "HyundaiRotem",
+            "sector": "Defense",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "KoreaInv",
+            "stock_code": "071050",
+            "stock_name": "KoreaInv",
+            "sector": "Finance",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Netmarble",
+            "stock_code": "251270",
+            "stock_name": "Netmarble",
+            "sector": "Games",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "HankookTire",
+            "stock_code": "161390",
+            "stock_name": "한국타이어앤테크놀로지",
+            "sector": "Automotive",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "KolmarKorea",
+            "stock_code": "161890",
+            "stock_name": "한국콜마",
+            "sector": "Cosmetics",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "SNTEnergy",
+            "stock_code": "100840",
+            "stock_name": "SNT에너지",
+            "sector": "Energy",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "DBHiTek",
+            "stock_code": "000990",
+            "stock_name": "DB하이텍",
+            "sector": "Semiconductors",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "DaehanShipbuilding",
+            "stock_code": "439260",
+            "stock_name": "대한조선",
+            "sector": "Shipbuilding",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Hanwha",
+            "stock_code": "000880",
+            "stock_name": "한화",
+            "sector": "Conglomerate",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "NAVER",
+            "stock_code": "035420",
+            "stock_name": "NAVER",
+            "sector": "Internet",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
         }
-    ],
-    "strategy": {
-        "P": 0.02,
-        "D": 0.02,
-        "R": 0.05,
-        "buy_interval_minutes": 5,
-        "allocation_ratio": {
-            "Account1": 0.3,
-            "Account2": 0.175,
-            "Account3": 0.175,
-            "Account4": 0.175,
-            "Account5": 0.175
-        }
-    },
-    "total_capital": 1000000,
-    "dry_run": true
+    ]
 }

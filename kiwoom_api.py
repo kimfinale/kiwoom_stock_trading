@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QAxContainer import QAxWidget
-from PyQt5.QtCore import QEventLoop
+from PyQt5.QtCore import QEventLoop, QTimer
 import time
 import pandas as pd
 
@@ -21,6 +21,12 @@ class Kiwoom(QAxWidget):
         self.tr_data = None
         self.remaining_data = False
         self.msg = ""
+        self.expected_rqname = None
+
+    def _on_timeout(self):
+        print(f"⚠️  Timeout: Request {self.expected_rqname} timed out.")
+        if self.tr_event_loop.isRunning():
+            self.tr_event_loop.exit()
 
     # --- Login & Connection ---
     def comm_connect(self):
@@ -48,6 +54,16 @@ class Kiwoom(QAxWidget):
         self.dynamicCall("SetInputValue(QString, QString)", id, value)
 
     def comm_rq_data(self, rqname, trcode, next, screen_no):
+        self.tr_data = None # Reset before request
+        self.expected_rqname = rqname
+        
+        # Start Timer
+        self.timer = QTimer()
+        self.timer.setSingleShot(True)
+        self.timer.timeout.connect(self._on_timeout)
+        self.timer.start(5000) # 5 seconds timeout
+        
+        # print(f"DEBUG: Requesting {rqname} ({trcode})") 
         self.dynamicCall("CommRqData(QString, QString, int, QString)", rqname, trcode, next, screen_no)
         self.tr_event_loop.exec_()
 
@@ -64,10 +80,13 @@ class Kiwoom(QAxWidget):
         elif rqname == "opw00018_req": # Account Balance
              self._opw00018(trcode, record_name)
 
-        try:
-            self.tr_event_loop.exit()
-        except:
-            pass
+        if self.expected_rqname == rqname:
+            try:
+                if hasattr(self, 'timer') and self.timer.isActive():
+                    self.timer.stop()
+                self.tr_event_loop.exit()
+            except:
+                pass
 
     def _on_receive_msg(self, screen_no, rqname, trcode, msg):
         self.msg = msg
@@ -105,7 +124,7 @@ class Kiwoom(QAxWidget):
         return self.tr_data
     
     def _opw00001(self, trcode, record_name):
-        deposit = self.get_comm_data(trcode, record_name, 0, "주문가능금액")
+        deposit = self.get_comm_data(trcode, record_name, 0, "예수금")
         self.tr_data = int(deposit)
 
     def get_account_evaluation(self, account_no):
