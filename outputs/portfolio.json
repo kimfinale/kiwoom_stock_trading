@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 95965139,
+    "total_value": 100162815,
     "daily_pnl": 0,
     "daily_return": 0.0,
     "total_pnl": 1059,
     "total_return": 0.0,
-    "cash": 66708735,
-    "cash_percent": 69.51
+    "cash": 70744655,
+    "cash_percent": 70.63
   },
   "history": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-02-12",
-      "value": 95965139
+      "value": 100162815
     }
   ],
   "holdings": [
@@ -143,8 +143,8 @@
   "accounts": [
     {
       "name": "Account 8119599511",
-      "total_value": 95965139,
-      "cash": 66708735,
+      "total_value": 100162815,
+      "cash": 70744655,
       "equity": 29418160
     }
   ],
