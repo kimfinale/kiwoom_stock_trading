@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 100003868,
+    "total_value": 99996841,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 3868,
-    "total_return": 0.0,
-    "cash": 72149475,
-    "cash_percent": 72.15
+    "total_pnl": -3159,
+    "total_return": -0.0,
+    "cash": 71745805,
+    "cash_percent": 71.75
   },
   "history": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-02-12",
-      "value": 100003868
+      "value": 99996841
     }
   ],
   "holdings": [
@@ -25,10 +25,10 @@
       "sector": "Electronics",
       "quantity": 4,
       "avg_price": 887750,
-      "current_price": 889000,
-      "value": 3556000,
-      "pnl": -26972,
-      "pnl_percent": -0.76,
+      "current_price": 888000,
+      "value": 3552000,
+      "pnl": -30954,
+      "pnl_percent": -0.87,
       "account": "Account 8119599511"
     },
     {
@@ -37,58 +37,58 @@
       "sector": "Electronics",
       "quantity": 24,
       "avg_price": 167577,
-      "current_price": 178200,
-      "value": 4276800,
-      "pnl": 217367,
-      "pnl_percent": 5.4,
+      "current_price": 178000,
+      "value": 4272000,
+      "pnl": 212586,
+      "pnl_percent": 5.29,
       "account": "Account 8119599511"
     },
     {
       "name": "한국전력",
       "symbol": "015760",
       "sector": "Utilities",
-      "quantity": 20,
-      "avg_price": 60920,
-      "current_price": 60900,
-      "value": 1218000,
-      "pnl": -11356,
-      "pnl_percent": -0.93,
+      "quantity": 21,
+      "avg_price": 60910,
+      "current_price": 60800,
+      "value": 1276800,
+      "pnl": -13783,
+      "pnl_percent": -1.08,
       "account": "Account 8119599511"
     },
     {
       "name": "KT",
       "symbol": "030200",
       "sector": "Telecom",
-      "quantity": 22,
-      "avg_price": 64934,
-      "current_price": 65200,
-      "value": 1434400,
-      "pnl": -7028,
-      "pnl_percent": -0.49,
+      "quantity": 23,
+      "avg_price": 64941,
+      "current_price": 65100,
+      "value": 1497300,
+      "pnl": -9803,
+      "pnl_percent": -0.66,
       "account": "Account 8119599511"
     },
     {
       "name": "LG유플러스",
       "symbol": "032640",
       "sector": "Telecom",
-      "quantity": 22,
+      "quantity": 23,
       "avg_price": 17172,
-      "current_price": 17140,
-      "value": 377080,
-      "pnl": -4098,
-      "pnl_percent": -1.08,
+      "current_price": 17150,
+      "value": 394450,
+      "pnl": -4053,
+      "pnl_percent": -1.03,
       "account": "Account 8119599511"
     },
     {
       "name": "현대로템",
       "symbol": "064350",
       "sector": "Defense",
-      "quantity": 19,
-      "avg_price": 202211,
+      "quantity": 20,
+      "avg_price": 202200,
       "current_price": 201500,
-      "value": 3828500,
-      "pnl": -47986,
-      "pnl_percent": -1.25,
+      "value": 4030000,
+      "pnl": -50310,
+      "pnl_percent": -1.24,
       "account": "Account 8119599511"
     },
     {
@@ -97,10 +97,10 @@
       "sector": "Finance",
       "quantity": 16,
       "avg_price": 249125,
-      "current_price": 250500,
-      "value": 4008000,
-      "pnl": -13986,
-      "pnl_percent": -0.35,
+      "current_price": 250000,
+      "value": 4000000,
+      "pnl": -21950,
+      "pnl_percent": -0.55,
       "account": "Account 8119599511"
     },
     {
@@ -119,12 +119,12 @@
       "name": "넷마블",
       "symbol": "251270",
       "sector": "Games",
-      "quantity": 18,
-      "avg_price": 57172,
-      "current_price": 57200,
-      "value": 1029600,
-      "pnl": -8758,
-      "pnl_percent": -0.85,
+      "quantity": 19,
+      "avg_price": 57179,
+      "current_price": 57300,
+      "value": 1088700,
+      "pnl": -7487,
+      "pnl_percent": -0.69,
       "account": "Account 8119599511"
     },
     {
@@ -133,26 +133,521 @@
       "sector": "Games",
       "quantity": 16,
       "avg_price": 259031,
-      "current_price": 258000,
-      "value": 4128000,
-      "pnl": -53696,
-      "pnl_percent": -1.3,
+      "current_price": 259000,
+      "value": 4144000,
+      "pnl": -37788,
+      "pnl_percent": -0.91,
       "account": "Account 8119599511"
     }
   ],
   "accounts": [
     {
-      "name": "Account 7032756831",
-      "total_value": 0,
-      "cash": 0,
-      "equity": 0
-    },
-    {
       "name": "Account 8119599511",
-      "total_value": 100003868,
-      "cash": 72149475,
-      "equity": 28008380
+      "total_value": 99996841,
+      "cash": 71745805,
+      "equity": 28407250
     }
   ],
-  "virtual_accounts": []
+  "virtual_accounts": [
+    {
+      "name": "Samsung_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Electronics"
+    },
+    {
+      "name": "Samsung_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "Samsung_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "Samsung_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "Samsung_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "LGUplus_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Telecom"
+    },
+    {
+      "name": "LGUplus_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "LGUplus_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "LGUplus_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "LGUplus_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "Krafton_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Games"
+    },
+    {
+      "name": "Krafton_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Krafton_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Krafton_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Krafton_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "KT_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Telecom"
+    },
+    {
+      "name": "KT_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "KT_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "KT_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "KT_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Telecom"
+    },
+    {
+      "name": "KEPCO_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Utilities"
+    },
+    {
+      "name": "KEPCO_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Utilities"
+    },
+    {
+      "name": "KEPCO_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Utilities"
+    },
+    {
+      "name": "KEPCO_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Utilities"
+    },
+    {
+      "name": "KEPCO_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Utilities"
+    },
+    {
+      "name": "SKHynix_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Electronics"
+    },
+    {
+      "name": "SKHynix_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "SKHynix_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "SKHynix_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "SKHynix_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Electronics"
+    },
+    {
+      "name": "HyundaiGlovis_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Logistics"
+    },
+    {
+      "name": "HyundaiGlovis_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Logistics"
+    },
+    {
+      "name": "HyundaiGlovis_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Logistics"
+    },
+    {
+      "name": "HyundaiGlovis_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Logistics"
+    },
+    {
+      "name": "HyundaiGlovis_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Logistics"
+    },
+    {
+      "name": "HyundaiRotem_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Defense"
+    },
+    {
+      "name": "HyundaiRotem_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Defense"
+    },
+    {
+      "name": "HyundaiRotem_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Defense"
+    },
+    {
+      "name": "HyundaiRotem_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Defense"
+    },
+    {
+      "name": "HyundaiRotem_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Defense"
+    },
+    {
+      "name": "KoreaInv_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Finance"
+    },
+    {
+      "name": "KoreaInv_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Finance"
+    },
+    {
+      "name": "KoreaInv_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Finance"
+    },
+    {
+      "name": "KoreaInv_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Finance"
+    },
+    {
+      "name": "KoreaInv_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Finance"
+    },
+    {
+      "name": "Netmarble_1",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.04000000000000001,
+      "total_value": 3999873,
+      "cash": 2869832,
+      "equity": 1136290,
+      "total_pnl": -126,
+      "sector": "Games"
+    },
+    {
+      "name": "Netmarble_2",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Netmarble_3",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Netmarble_4",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    },
+    {
+      "name": "Netmarble_5",
+      "real_account_ref": "Account 8119599511",
+      "allocation_ratio": 0.015,
+      "total_value": 1499952,
+      "cash": 1076187,
+      "equity": 426108,
+      "total_pnl": -47,
+      "sector": "Games"
+    }
+  ]
 }
