@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 99991522,
+    "total_value": 100003868,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": -8478,
-    "total_return": -0.01,
+    "total_pnl": 3868,
+    "total_return": 0.0,
     "cash": 72149475,
-    "cash_percent": 72.16
+    "cash_percent": 72.15
   },
   "history": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-02-12",
-      "value": 99991522
+      "value": 100003868
     }
   ],
   "holdings": [
@@ -37,10 +37,10 @@
       "sector": "Electronics",
       "quantity": 24,
       "avg_price": 167577,
-      "current_price": 178100,
-      "value": 4274400,
-      "pnl": 214972,
-      "pnl_percent": 5.35,
+      "current_price": 178200,
+      "value": 4276800,
+      "pnl": 217367,
+      "pnl_percent": 5.4,
       "account": "Account 8119599511"
     },
     {
@@ -49,10 +49,10 @@
       "sector": "Utilities",
       "quantity": 20,
       "avg_price": 60920,
-      "current_price": 60800,
-      "value": 1216000,
-      "pnl": -13342,
-      "pnl_percent": -1.1,
+      "current_price": 60900,
+      "value": 1218000,
+      "pnl": -11356,
+      "pnl_percent": -0.93,
       "account": "Account 8119599511"
     },
     {
@@ -97,10 +97,10 @@
       "sector": "Finance",
       "quantity": 16,
       "avg_price": 249125,
-      "current_price": 250000,
-      "value": 4000000,
-      "pnl": -21950,
-      "pnl_percent": -0.55,
+      "current_price": 250500,
+      "value": 4008000,
+      "pnl": -13986,
+      "pnl_percent": -0.35,
       "account": "Account 8119599511"
     },
     {
@@ -149,9 +149,9 @@
     },
     {
       "name": "Account 8119599511",
-      "total_value": 99991522,
+      "total_value": 100003868,
       "cash": 72149475,
-      "equity": 27995980
+      "equity": 28008380
     }
   ],
   "virtual_accounts": []
