@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 100168516,
+    "total_value": 100164140,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 168516,
-    "total_return": 0.17,
-    "cash": 89669660,
-    "cash_percent": 89.52
+    "total_pnl": 164140,
+    "total_return": 0.16,
+    "cash": 89483510,
+    "cash_percent": 89.34
   },
   "history": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-02-12",
-      "value": 100168516
+      "value": 100164140
     }
   ],
   "holdings": [
@@ -49,10 +49,10 @@
       "sector": "Unknown",
       "quantity": 3,
       "avg_price": 61167,
-      "current_price": 61200,
-      "value": 183600,
-      "pnl": -1546,
-      "pnl_percent": -0.84,
+      "current_price": 61100,
+      "value": 183300,
+      "pnl": -1845,
+      "pnl_percent": -1.01,
       "account": "Account 8119599511"
     },
     {
@@ -73,34 +73,34 @@
       "sector": "Unknown",
       "quantity": 4,
       "avg_price": 17225,
-      "current_price": 17200,
-      "value": 68800,
-      "pnl": -717,
-      "pnl_percent": -1.04,
+      "current_price": 17190,
+      "value": 68760,
+      "pnl": -757,
+      "pnl_percent": -1.1,
       "account": "Account 8119599511"
     },
     {
       "name": "현대로템",
       "symbol": "064350",
       "sector": "Unknown",
-      "quantity": 2,
-      "avg_price": 203750,
+      "quantity": 3,
+      "avg_price": 204000,
       "current_price": 204500,
-      "value": 409000,
-      "pnl": -2167,
-      "pnl_percent": -0.53,
+      "value": 613500,
+      "pnl": -4006,
+      "pnl_percent": -0.65,
       "account": "Account 8119599511"
     },
     {
       "name": "한국금융지주",
       "symbol": "071050",
       "sector": "Unknown",
-      "quantity": 2,
-      "avg_price": 244500,
+      "quantity": 3,
+      "avg_price": 244333,
       "current_price": 244000,
-      "value": 488000,
-      "pnl": -5386,
-      "pnl_percent": -1.1,
+      "value": 732000,
+      "pnl": -7584,
+      "pnl_percent": -1.03,
       "account": "Account 8119599511"
     },
     {
@@ -149,9 +149,9 @@
     },
     {
       "name": "Account 8119599511",
-      "total_value": 100168516,
-      "cash": 89669660,
-      "equity": 10291500
+      "total_value": 100164140,
+      "cash": 89483510,
+      "equity": 10739660
     }
   ],
   "virtual_accounts": [
@@ -159,451 +159,451 @@
       "name": "Samsung_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "Samsung_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Samsung_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Samsung_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Samsung_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "LGUplus_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "LGUplus_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "LGUplus_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "LGUplus_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "LGUplus_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Krafton_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "Krafton_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Krafton_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Krafton_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Krafton_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KT_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "KT_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KT_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KT_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KT_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KEPCO_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "KEPCO_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KEPCO_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KEPCO_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KEPCO_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "SKHynix_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "SKHynix_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "SKHynix_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "SKHynix_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "SKHynix_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiGlovis_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "HyundaiGlovis_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiGlovis_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiGlovis_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiGlovis_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiRotem_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "HyundaiRotem_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiRotem_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiRotem_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "HyundaiRotem_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KoreaInv_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "KoreaInv_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KoreaInv_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KoreaInv_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "KoreaInv_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Netmarble_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
-      "total_value": 4006740,
-      "cash": 3586786,
-      "equity": 411660,
-      "total_pnl": 6740
+      "total_value": 4006565,
+      "cash": 3579340,
+      "equity": 429586,
+      "total_pnl": 6565
     },
     {
       "name": "Netmarble_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Netmarble_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Netmarble_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     },
     {
       "name": "Netmarble_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
-      "total_value": 1502527,
-      "cash": 1345044,
-      "equity": 154372,
-      "total_pnl": 2527
+      "total_value": 1502462,
+      "cash": 1342252,
+      "equity": 161094,
+      "total_pnl": 2462
     }
   ]
 }
