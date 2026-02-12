@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 100044270,
+    "total_value": 100049196,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 44270,
-    "total_return": 0.04,
-    "cash": 76360070,
-    "cash_percent": 76.33
+    "total_pnl": 49196,
+    "total_return": 0.05,
+    "cash": 75444860,
+    "cash_percent": 75.41
   },
   "history": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-02-12",
-      "value": 100044270
+      "value": 100049196
     }
   ],
   "holdings": [
@@ -25,10 +25,10 @@
       "sector": "Electronics",
       "quantity": 4,
       "avg_price": 887750,
-      "current_price": 885000,
-      "value": 3540000,
-      "pnl": -42890,
-      "pnl_percent": -1.21,
+      "current_price": 886000,
+      "value": 3544000,
+      "pnl": -38908,
+      "pnl_percent": -1.1,
       "account": "Account 8119599511"
     },
     {
@@ -37,94 +37,94 @@
       "sector": "Electronics",
       "quantity": 24,
       "avg_price": 167577,
-      "current_price": 177700,
-      "value": 4264800,
-      "pnl": 205431,
-      "pnl_percent": 5.11,
+      "current_price": 178100,
+      "value": 4274400,
+      "pnl": 214972,
+      "pnl_percent": 5.35,
       "account": "Account 8119599511"
     },
     {
       "name": "한국전력",
       "symbol": "015760",
       "sector": "Utilities",
-      "quantity": 14,
-      "avg_price": 60936,
-      "current_price": 60800,
-      "value": 851200,
-      "pnl": -9551,
-      "pnl_percent": -1.12,
+      "quantity": 15,
+      "avg_price": 60927,
+      "current_price": 60900,
+      "value": 913500,
+      "pnl": -8606,
+      "pnl_percent": -0.94,
       "account": "Account 8119599511"
     },
     {
       "name": "KT",
       "symbol": "030200",
       "sector": "Telecom",
-      "quantity": 16,
+      "quantity": 17,
       "avg_price": 64900,
-      "current_price": 64900,
-      "value": 1038400,
-      "pnl": -9336,
-      "pnl_percent": -0.9,
+      "current_price": 65000,
+      "value": 1105000,
+      "pnl": -8229,
+      "pnl_percent": -0.75,
       "account": "Account 8119599511"
     },
     {
       "name": "LG유플러스",
       "symbol": "032640",
       "sector": "Telecom",
-      "quantity": 16,
-      "avg_price": 17187,
-      "current_price": 17130,
-      "value": 274080,
-      "pnl": -3368,
-      "pnl_percent": -1.22,
+      "quantity": 17,
+      "avg_price": 17182,
+      "current_price": 17110,
+      "value": 290870,
+      "pnl": -3831,
+      "pnl_percent": -1.31,
       "account": "Account 8119599511"
     },
     {
       "name": "현대로템",
       "symbol": "064350",
       "sector": "Defense",
-      "quantity": 13,
-      "avg_price": 202538,
-      "current_price": 201750,
-      "value": 2622750,
-      "pnl": -33875,
-      "pnl_percent": -1.29,
+      "quantity": 14,
+      "avg_price": 202464,
+      "current_price": 201500,
+      "value": 2821000,
+      "pnl": -38931,
+      "pnl_percent": -1.37,
       "account": "Account 8119599511"
     },
     {
       "name": "한국금융지주",
       "symbol": "071050",
       "sector": "Finance",
-      "quantity": 12,
-      "avg_price": 248292,
+      "quantity": 13,
+      "avg_price": 248500,
       "current_price": 251000,
-      "value": 3012000,
-      "pnl": 5516,
-      "pnl_percent": 0.19,
+      "value": 3263000,
+      "pnl": 3255,
+      "pnl_percent": 0.1,
       "account": "Account 8119599511"
     },
     {
       "name": "현대글로비스",
       "symbol": "086280",
       "sector": "Logistics",
-      "quantity": 13,
-      "avg_price": 259654,
+      "quantity": 14,
+      "avg_price": 259643,
       "current_price": 259500,
-      "value": 3373500,
-      "pnl": -32356,
-      "pnl_percent": -0.96,
+      "value": 3633000,
+      "pnl": -34695,
+      "pnl_percent": -0.95,
       "account": "Account 8119599511"
     },
     {
       "name": "넷마블",
       "symbol": "251270",
       "sector": "Games",
-      "quantity": 12,
-      "avg_price": 57142,
+      "quantity": 13,
+      "avg_price": 57146,
       "current_price": 57200,
-      "value": 686400,
-      "pnl": -5462,
-      "pnl_percent": -0.8,
+      "value": 743600,
+      "pnl": -5986,
+      "pnl_percent": -0.81,
       "account": "Account 8119599511"
     },
     {
@@ -149,9 +149,9 @@
     },
     {
       "name": "Account 8119599511",
-      "total_value": 100044270,
-      "cash": 76360070,
-      "equity": 23815130
+      "total_value": 100049196,
+      "cash": 75444860,
+      "equity": 24740370
     }
   ],
   "virtual_accounts": []
