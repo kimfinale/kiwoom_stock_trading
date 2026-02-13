@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 100216482,
+    "total_value": 100231071,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 216442,
-    "total_return": 0.22,
-    "cash": 62161532,
-    "cash_percent": 62.03
+    "total_pnl": 231031,
+    "total_return": 0.23,
+    "cash": 62161471,
+    "cash_percent": 62.02
   },
   "history": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "date": "2026-02-13",
-      "value": 100216482
+      "value": 100231071
     }
   ],
   "holdings": [
@@ -29,10 +29,10 @@
       "sector": "Electronics",
       "quantity": 5,
       "avg_price": 886000,
-      "current_price": 887000,
-      "value": 4435000,
-      "pnl": -34889,
-      "pnl_percent": -0.79,
+      "current_price": 893000,
+      "value": 4465000,
+      "pnl": -5049,
+      "pnl_percent": -0.11,
       "account": "Account 8119599511"
     },
     {
@@ -41,10 +41,10 @@
       "sector": "Conglomerate",
       "quantity": 6,
       "avg_price": 118433,
-      "current_price": 119300,
-      "value": 715800,
-      "pnl": -1210,
-      "pnl_percent": -0.17,
+      "current_price": 119200,
+      "value": 715200,
+      "pnl": -1809,
+      "pnl_percent": -0.25,
       "account": "Account 8119599511"
     },
     {
@@ -53,10 +53,10 @@
       "sector": "Semiconductors",
       "quantity": 6,
       "avg_price": 93467,
-      "current_price": 93500,
-      "value": 561000,
-      "pnl": -4841,
-      "pnl_percent": -0.86,
+      "current_price": 94000,
+      "value": 564000,
+      "pnl": -1858,
+      "pnl_percent": -0.33,
       "account": "Account 8119599511"
     },
     {
@@ -65,10 +65,10 @@
       "sector": "Electronics",
       "quantity": 24,
       "avg_price": 167577,
-      "current_price": 180500,
-      "value": 4332000,
-      "pnl": 272256,
-      "pnl_percent": 6.77,
+      "current_price": 181500,
+      "value": 4356000,
+      "pnl": 296128,
+      "pnl_percent": 7.36,
       "account": "Account 8119599511"
     },
     {
@@ -77,10 +77,10 @@
       "sector": "Utilities",
       "quantity": 41,
       "avg_price": 60540,
-      "current_price": 60400,
-      "value": 2476400,
-      "pnl": -28042,
-      "pnl_percent": -1.13,
+      "current_price": 60800,
+      "value": 2492800,
+      "pnl": -11735,
+      "pnl_percent": -0.47,
       "account": "Account 8119599511"
     },
     {
@@ -89,10 +89,10 @@
       "sector": "Telecom",
       "quantity": 36,
       "avg_price": 64904,
-      "current_price": 65000,
-      "value": 2340000,
-      "pnl": -17590,
-      "pnl_percent": -0.75,
+      "current_price": 64900,
+      "value": 2336400,
+      "pnl": -21162,
+      "pnl_percent": -0.91,
       "account": "Account 8119599511"
     },
     {
@@ -101,10 +101,10 @@
       "sector": "Telecom",
       "quantity": 45,
       "avg_price": 17094,
-      "current_price": 17230,
-      "value": 775350,
-      "pnl": -815,
-      "pnl_percent": -0.11,
+      "current_price": 17180,
+      "value": 773100,
+      "pnl": -3050,
+      "pnl_percent": -0.4,
       "account": "Account 8119599511"
     },
     {
@@ -113,10 +113,10 @@
       "sector": "Internet",
       "quantity": 6,
       "avg_price": 252208,
-      "current_price": 253500,
-      "value": 1521000,
-      "pnl": -5901,
-      "pnl_percent": -0.39,
+      "current_price": 253000,
+      "value": 1518000,
+      "pnl": -8886,
+      "pnl_percent": -0.59,
       "account": "Account 8119599511"
     },
     {
@@ -137,10 +137,10 @@
       "sector": "Finance",
       "quantity": 16,
       "avg_price": 249125,
-      "current_price": 257000,
-      "value": 4112000,
-      "pnl": 89436,
-      "pnl_percent": 2.24,
+      "current_price": 255000,
+      "value": 4080000,
+      "pnl": 57610,
+      "pnl_percent": 1.45,
       "account": "Account 8119599511"
     },
     {
@@ -161,10 +161,10 @@
       "sector": "Energy",
       "quantity": 6,
       "avg_price": 46467,
-      "current_price": 47150,
-      "value": 282900,
-      "pnl": 1575,
-      "pnl_percent": 0.56,
+      "current_price": 47400,
+      "value": 284400,
+      "pnl": 3072,
+      "pnl_percent": 1.1,
       "account": "Account 8119599511"
     },
     {
@@ -173,10 +173,10 @@
       "sector": "Automotive",
       "quantity": 6,
       "avg_price": 72733,
-      "current_price": 72400,
-      "value": 434400,
-      "pnl": -5908,
-      "pnl_percent": -1.35,
+      "current_price": 72500,
+      "value": 435000,
+      "pnl": -5309,
+      "pnl_percent": -1.22,
       "account": "Account 8119599511"
     },
     {
@@ -197,10 +197,10 @@
       "sector": "Games",
       "quantity": 30,
       "avg_price": 57223,
-      "current_price": 57600,
-      "value": 1728000,
-      "pnl": -4196,
-      "pnl_percent": -0.24,
+      "current_price": 57500,
+      "value": 1725000,
+      "pnl": -7179,
+      "pnl_percent": -0.42,
       "account": "Account 8119599511"
     },
     {
@@ -209,10 +209,10 @@
       "sector": "Games",
       "quantity": 17,
       "avg_price": 258882,
-      "current_price": 258500,
-      "value": 4394500,
-      "pnl": -46068,
-      "pnl_percent": -1.05,
+      "current_price": 257500,
+      "value": 4377500,
+      "pnl": -62974,
+      "pnl_percent": -1.43,
       "account": "Account 8119599511"
     },
     {
@@ -221,19 +221,19 @@
       "sector": "Shipbuilding",
       "quantity": 6,
       "avg_price": 74967,
-      "current_price": 75800,
-      "value": 454800,
-      "pnl": 931,
-      "pnl_percent": 0.21,
+      "current_price": 75900,
+      "value": 455400,
+      "pnl": 1530,
+      "pnl_percent": 0.34,
       "account": "Account 8119599511"
     }
   ],
   "accounts": [
     {
       "name": "Account 8119599511",
-      "total_value": 100216482,
-      "cash": 62161532,
-      "equity": 38054950
+      "total_value": 100231071,
+      "cash": 62161471,
+      "equity": 38069600
     }
   ],
   "virtual_accounts": [
@@ -244,10 +244,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4332400,
+      "total_value": 4356400,
       "cash": 400,
-      "equity": 4332000,
-      "total_pnl": 310152,
+      "equity": 4356000,
+      "total_pnl": 334152,
       "sector": "Electronics"
     },
     {
@@ -309,10 +309,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4002285,
+      "total_value": 4000585,
       "cash": 3416465,
-      "equity": 585820,
-      "total_pnl": 2285,
+      "equity": 584120,
+      "total_pnl": 585,
       "sector": "Telecom"
     },
     {
@@ -322,10 +322,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1502130,
+      "total_value": 1501780,
       "cash": 1381520,
-      "equity": 120610,
-      "total_pnl": 2130,
+      "equity": 120260,
+      "total_pnl": 1780,
       "sector": "Telecom"
     },
     {
@@ -335,10 +335,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 2.0,
-      "total_value": 1501670,
+      "total_value": 1501470,
       "cash": 1432750,
-      "equity": 68920,
-      "total_pnl": 1670,
+      "equity": 68720,
+      "total_pnl": 1470,
       "sector": "Telecom"
     },
     {
@@ -374,10 +374,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3990500,
+      "total_value": 3975500,
       "cash": 113000,
-      "equity": 3877500,
-      "total_pnl": -9500,
+      "equity": 3862500,
+      "total_pnl": -24500,
       "sector": "Games"
     },
     {
@@ -387,10 +387,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1503000,
+      "total_value": 1501000,
       "cash": 986000,
-      "equity": 517000,
-      "total_pnl": 3000,
+      "equity": 515000,
+      "total_pnl": 1000,
       "sector": "Games"
     },
     {
@@ -439,10 +439,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000650,
+      "total_value": 3997250,
       "cash": 1790650,
-      "equity": 2210000,
-      "total_pnl": 650,
+      "equity": 2206600,
+      "total_pnl": -2750,
       "sector": "Telecom"
     },
     {
@@ -452,10 +452,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1501400,
+      "total_value": 1501200,
       "cash": 1371400,
-      "equity": 130000,
-      "total_pnl": 1400,
+      "equity": 129800,
+      "total_pnl": 1200,
       "sector": "Telecom"
     },
     {
@@ -504,10 +504,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3989700,
+      "total_value": 4002500,
       "cash": 2056900,
-      "equity": 1932800,
-      "total_pnl": -10300,
+      "equity": 1945600,
+      "total_pnl": 2500,
       "sector": "Utilities"
     },
     {
@@ -517,10 +517,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1502700,
+      "total_value": 1505500,
       "cash": 1079900,
-      "equity": 422800,
-      "total_pnl": 2700,
+      "equity": 425600,
+      "total_pnl": 5500,
       "sector": "Utilities"
     },
     {
@@ -530,10 +530,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 2.0,
-      "total_value": 1501200,
+      "total_value": 1502000,
       "cash": 1380400,
-      "equity": 120800,
-      "total_pnl": 1200,
+      "equity": 121600,
+      "total_pnl": 2000,
       "sector": "Utilities"
     },
     {
@@ -569,10 +569,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3996000,
+      "total_value": 4020000,
       "cash": 448000,
-      "equity": 3548000,
-      "total_pnl": -4000,
+      "equity": 3572000,
+      "total_pnl": 20000,
       "sector": "Electronics"
     },
     {
@@ -582,10 +582,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1508000,
+      "total_value": 1514000,
       "cash": 621000,
-      "equity": 887000,
-      "total_pnl": 8000,
+      "equity": 893000,
+      "total_pnl": 14000,
       "sector": "Electronics"
     },
     {
@@ -764,10 +764,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4127500,
+      "total_value": 4095500,
       "cash": 15500,
-      "equity": 4112000,
-      "total_pnl": 127500,
+      "equity": 4080000,
+      "total_pnl": 95500,
       "sector": "Finance"
     },
     {
@@ -829,10 +829,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4011600,
+      "total_value": 4008600,
       "cash": 2283600,
-      "equity": 1728000,
-      "total_pnl": 11600,
+      "equity": 1725000,
+      "total_pnl": 8600,
       "sector": "Games"
     },
     {
@@ -894,10 +894,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3997900,
+      "total_value": 3998500,
       "cash": 3563500,
-      "equity": 434400,
-      "total_pnl": -2100,
+      "equity": 435000,
+      "total_pnl": -1500,
       "sector": "Automotive"
     },
     {
@@ -1024,10 +1024,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4004300,
+      "total_value": 4005800,
       "cash": 3721400,
-      "equity": 282900,
-      "total_pnl": 4300,
+      "equity": 284400,
+      "total_pnl": 5800,
       "sector": "Energy"
     },
     {
@@ -1089,10 +1089,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000600,
+      "total_value": 4003600,
       "cash": 3439600,
-      "equity": 561000,
-      "total_pnl": 600,
+      "equity": 564000,
+      "total_pnl": 3600,
       "sector": "Semiconductors"
     },
     {
@@ -1154,10 +1154,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4005100,
+      "total_value": 4005700,
       "cash": 3550300,
-      "equity": 454800,
-      "total_pnl": 5100,
+      "equity": 455400,
+      "total_pnl": 5700,
       "sector": "Shipbuilding"
     },
     {
@@ -1219,10 +1219,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4005300,
+      "total_value": 4004700,
       "cash": 3289500,
-      "equity": 715800,
-      "total_pnl": 5300,
+      "equity": 715200,
+      "total_pnl": 4700,
       "sector": "Conglomerate"
     },
     {
@@ -1284,10 +1284,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4008500,
+      "total_value": 4005500,
       "cash": 2487500,
-      "equity": 1521000,
-      "total_pnl": 8500,
+      "equity": 1518000,
+      "total_pnl": 5500,
       "sector": "Internet"
     },
     {
