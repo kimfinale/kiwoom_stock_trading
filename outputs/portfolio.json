@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_value": 100220749,
+    "total_value": 100168250,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 220749,
-    "total_return": 0.22,
-    "cash": 69716939,
-    "cash_percent": 69.56
+    "total_pnl": 168230,
+    "total_return": 0.17,
+    "cash": 68745030,
+    "cash_percent": 68.63
   },
   "history": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "date": "2026-02-13",
-      "value": 100220749
+      "value": 100168250
     }
   ],
   "holdings": [
@@ -29,10 +29,10 @@
       "sector": "Electronics",
       "quantity": 4,
       "avg_price": 887750,
-      "current_price": 899000,
-      "value": 3596000,
-      "pnl": 12808,
-      "pnl_percent": 0.36,
+      "current_price": 898000,
+      "value": 3592000,
+      "pnl": 8826,
+      "pnl_percent": 0.25,
       "account": "Account 8119599511"
     },
     {
@@ -41,10 +41,10 @@
       "sector": "Conglomerate",
       "quantity": 1,
       "avg_price": 118200,
-      "current_price": 118100,
-      "value": 118100,
-      "pnl": -1156,
-      "pnl_percent": -0.98,
+      "current_price": 118300,
+      "value": 118300,
+      "pnl": -956,
+      "pnl_percent": -0.81,
       "account": "Account 8119599511"
     },
     {
@@ -53,10 +53,10 @@
       "sector": "Semiconductors",
       "quantity": 1,
       "avg_price": 93400,
-      "current_price": 93500,
-      "value": 93500,
-      "pnl": -726,
-      "pnl_percent": -0.78,
+      "current_price": 93900,
+      "value": 93900,
+      "pnl": -326,
+      "pnl_percent": -0.35,
       "account": "Account 8119599511"
     },
     {
@@ -65,22 +65,22 @@
       "sector": "Electronics",
       "quantity": 24,
       "avg_price": 167577,
-      "current_price": 183700,
-      "value": 4408800,
-      "pnl": 348633,
-      "pnl_percent": 8.67,
+      "current_price": 182900,
+      "value": 4389600,
+      "pnl": 329542,
+      "pnl_percent": 8.19,
       "account": "Account 8119599511"
     },
     {
       "name": "한국전력",
       "symbol": "015760",
       "sector": "Utilities",
-      "quantity": 27,
-      "avg_price": 60826,
-      "current_price": 60700,
-      "value": 1638900,
-      "pnl": -18147,
-      "pnl_percent": -1.1,
+      "quantity": 29,
+      "avg_price": 60797,
+      "current_price": 60200,
+      "value": 1745800,
+      "pnl": -33070,
+      "pnl_percent": -1.88,
       "account": "Account 8119599511"
     },
     {
@@ -89,10 +89,10 @@
       "sector": "Telecom",
       "quantity": 29,
       "avg_price": 64957,
-      "current_price": 65900,
-      "value": 1911100,
-      "pnl": 10259,
-      "pnl_percent": 0.54,
+      "current_price": 66100,
+      "value": 1916900,
+      "pnl": 16027,
+      "pnl_percent": 0.85,
       "account": "Account 8119599511"
     },
     {
@@ -101,10 +101,10 @@
       "sector": "Telecom",
       "quantity": 29,
       "avg_price": 17172,
-      "current_price": 17290,
-      "value": 501410,
-      "pnl": -1077,
-      "pnl_percent": -0.22,
+      "current_price": 17380,
+      "value": 504020,
+      "pnl": 1517,
+      "pnl_percent": 0.3,
       "account": "Account 8119599511"
     },
     {
@@ -137,22 +137,22 @@
       "sector": "Finance",
       "quantity": 16,
       "avg_price": 249125,
-      "current_price": 250000,
-      "value": 4000000,
-      "pnl": -21950,
-      "pnl_percent": -0.55,
+      "current_price": 251000,
+      "value": 4016000,
+      "pnl": -6032,
+      "pnl_percent": -0.15,
       "account": "Account 8119599511"
     },
     {
       "name": "현대글로비스",
       "symbol": "086280",
       "sector": "Logistics",
-      "quantity": 16,
-      "avg_price": 259641,
-      "current_price": 257000,
-      "value": 4112000,
-      "pnl": -79394,
-      "pnl_percent": -1.91,
+      "quantity": 19,
+      "avg_price": 259066,
+      "current_price": 256500,
+      "value": 4873500,
+      "pnl": -92766,
+      "pnl_percent": -1.88,
       "account": "Account 8119599511"
     },
     {
@@ -161,10 +161,10 @@
       "sector": "Energy",
       "quantity": 1,
       "avg_price": 46950,
-      "current_price": 46900,
-      "value": 46900,
-      "pnl": -463,
-      "pnl_percent": -0.99,
+      "current_price": 46400,
+      "value": 46400,
+      "pnl": -962,
+      "pnl_percent": -2.05,
       "account": "Account 8119599511"
     },
     {
@@ -173,10 +173,10 @@
       "sector": "Automotive",
       "quantity": 1,
       "avg_price": 72500,
-      "current_price": 72500,
-      "value": 72500,
-      "pnl": -644,
-      "pnl_percent": -0.89,
+      "current_price": 73900,
+      "value": 73900,
+      "pnl": 754,
+      "pnl_percent": 1.04,
       "account": "Account 8119599511"
     },
     {
@@ -185,10 +185,10 @@
       "sector": "Cosmetics",
       "quantity": 1,
       "avg_price": 72200,
-      "current_price": 72100,
-      "value": 72100,
-      "pnl": -744,
-      "pnl_percent": -1.03,
+      "current_price": 72300,
+      "value": 72300,
+      "pnl": -544,
+      "pnl_percent": -0.75,
       "account": "Account 8119599511"
     },
     {
@@ -197,10 +197,10 @@
       "sector": "Games",
       "quantity": 25,
       "avg_price": 57160,
-      "current_price": 57300,
-      "value": 1432500,
-      "pnl": -9374,
-      "pnl_percent": -0.66,
+      "current_price": 57200,
+      "value": 1430000,
+      "pnl": -11860,
+      "pnl_percent": -0.83,
       "account": "Account 8119599511"
     },
     {
@@ -209,19 +209,31 @@
       "sector": "Games",
       "quantity": 16,
       "avg_price": 259031,
-      "current_price": 263000,
-      "value": 4208000,
-      "pnl": 25864,
-      "pnl_percent": 0.62,
+      "current_price": 261500,
+      "value": 4184000,
+      "pnl": 1992,
+      "pnl_percent": 0.05,
+      "account": "Account 8119599511"
+    },
+    {
+      "name": "대한조선",
+      "symbol": "439260",
+      "sector": "Shipbuilding",
+      "quantity": 1,
+      "avg_price": 74700,
+      "current_price": 74600,
+      "value": 74600,
+      "pnl": -768,
+      "pnl_percent": -1.03,
       "account": "Account 8119599511"
     }
   ],
   "accounts": [
     {
       "name": "Account 8119599511",
-      "total_value": 100220749,
-      "cash": 69716939,
-      "equity": 30503810
+      "total_value": 100168250,
+      "cash": 68745030,
+      "equity": 31423220
     }
   ],
   "virtual_accounts": [
@@ -232,10 +244,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4409200,
+      "total_value": 4390000,
       "cash": 400,
-      "equity": 4408800,
-      "total_pnl": 386952,
+      "equity": 4389600,
+      "total_pnl": 367752,
       "sector": "Electronics"
     },
     {
@@ -297,10 +309,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4003385,
+      "total_value": 4005995,
       "cash": 3501975,
-      "equity": 501410,
-      "total_pnl": 3385,
+      "equity": 504020,
+      "total_pnl": 5995,
       "sector": "Telecom"
     },
     {
@@ -362,10 +374,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4058000,
+      "total_value": 4035500,
       "cash": 113000,
-      "equity": 3945000,
-      "total_pnl": 58000,
+      "equity": 3922500,
+      "total_pnl": 35500,
       "sector": "Games"
     },
     {
@@ -375,10 +387,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1506000,
+      "total_value": 1504500,
       "cash": 1243000,
-      "equity": 263000,
-      "total_pnl": 6000,
+      "equity": 261500,
+      "total_pnl": 4500,
       "sector": "Games"
     },
     {
@@ -427,10 +439,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4025650,
+      "total_value": 4031450,
       "cash": 2114550,
-      "equity": 1911100,
-      "total_pnl": 25650,
+      "equity": 1916900,
+      "total_pnl": 31450,
       "sector": "Telecom"
     },
     {
@@ -492,10 +504,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3995600,
+      "total_value": 3982100,
       "cash": 2356700,
-      "equity": 1638900,
-      "total_pnl": -4400,
+      "equity": 1625400,
+      "total_pnl": -17900,
       "sector": "Utilities"
     },
     {
@@ -505,10 +517,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1500000,
-      "cash": 1500000,
-      "equity": 0,
-      "total_pnl": 0,
+      "total_value": 1499600,
+      "cash": 1379200,
+      "equity": 120400,
+      "total_pnl": -400,
       "sector": "Utilities"
     },
     {
@@ -557,10 +569,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4044000,
+      "total_value": 4040000,
       "cash": 448000,
-      "equity": 3596000,
-      "total_pnl": 44000,
+      "equity": 3592000,
+      "total_pnl": 40000,
       "sector": "Electronics"
     },
     {
@@ -622,10 +634,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3960000,
+      "total_value": 3952500,
       "cash": 105000,
-      "equity": 3855000,
-      "total_pnl": -40000,
+      "equity": 3847500,
+      "total_pnl": -47500,
       "sector": "Logistics"
     },
     {
@@ -636,8 +648,8 @@
       "rise_pct": 3.0,
       "dip_pct": 1.0,
       "total_value": 1499000,
-      "cash": 1242000,
-      "equity": 257000,
+      "cash": 729500,
+      "equity": 769500,
       "total_pnl": -1000,
       "sector": "Logistics"
     },
@@ -648,10 +660,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 2.0,
-      "total_value": 1500000,
-      "cash": 1500000,
-      "equity": 0,
-      "total_pnl": 0,
+      "total_value": 1501500,
+      "cash": 1245000,
+      "equity": 256500,
+      "total_pnl": 1500,
       "sector": "Logistics"
     },
     {
@@ -752,10 +764,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4015500,
+      "total_value": 4031500,
       "cash": 15500,
-      "equity": 4000000,
-      "total_pnl": 15500,
+      "equity": 4016000,
+      "total_pnl": 31500,
       "sector": "Finance"
     },
     {
@@ -817,10 +829,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4003800,
+      "total_value": 4001300,
       "cash": 2571300,
-      "equity": 1432500,
-      "total_pnl": 3800,
+      "equity": 1430000,
+      "total_pnl": 1300,
       "sector": "Games"
     },
     {
@@ -882,10 +894,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000000,
+      "total_value": 4001400,
       "cash": 3927500,
-      "equity": 72500,
-      "total_pnl": 0,
+      "equity": 73900,
+      "total_pnl": 1400,
       "sector": "Automotive"
     },
     {
@@ -947,10 +959,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3999700,
+      "total_value": 3999900,
       "cash": 3927600,
-      "equity": 72100,
-      "total_pnl": -300,
+      "equity": 72300,
+      "total_pnl": -100,
       "sector": "Cosmetics"
     },
     {
@@ -1012,10 +1024,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3999950,
+      "total_value": 3999450,
       "cash": 3953050,
-      "equity": 46900,
-      "total_pnl": -50,
+      "equity": 46400,
+      "total_pnl": -550,
       "sector": "Energy"
     },
     {
@@ -1077,10 +1089,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000100,
+      "total_value": 4000500,
       "cash": 3906600,
-      "equity": 93500,
-      "total_pnl": 100,
+      "equity": 93900,
+      "total_pnl": 500,
       "sector": "Semiconductors"
     },
     {
@@ -1142,10 +1154,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000000.0,
+      "total_value": 3999900,
       "cash": 3925300,
-      "equity": 74700.0,
-      "total_pnl": 0.0,
+      "equity": 74600,
+      "total_pnl": -100,
       "sector": "Shipbuilding"
     },
     {
@@ -1207,10 +1219,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4000000,
+      "total_value": 4000200,
       "cash": 3881900,
-      "equity": 118100,
-      "total_pnl": 0,
+      "equity": 118300,
+      "total_pnl": 200,
       "sector": "Conglomerate"
     },
     {
