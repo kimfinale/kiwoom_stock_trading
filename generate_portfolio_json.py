@@ -22,7 +22,8 @@ DEFAULT_PORTFOLIO = {
     "accounts": []
 }
 
-OUTPUT_DIR = "outputs"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "outputs")
 PORTFOLIO_FILE = os.path.join(OUTPUT_DIR, "portfolio.json")
 MAX_HISTORY_DAYS = 60
 
@@ -154,19 +155,52 @@ def fetch_and_generate_portfolio(kiwoom):
 
         time.sleep(0.3)
 
+    # Load and Update History (before summary so we can compute daily P&L)
+    portfolio = load_portfolio()
+    history = portfolio.get("history", [])
+    history.sort(key=lambda x: x['date'])
+
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
+
+    # Find previous day's value for daily P&L calculation
+    prev_value = None
+    for entry in reversed(history):
+        if entry["date"] < today_str:
+            prev_value = entry["value"]
+            break
+
+    # Update or append today's entry
+    todays_entry = next((item for item in history if item["date"] == today_str), None)
+    if todays_entry:
+        todays_entry["value"] = total_value
+    else:
+        history.append({
+            "date": today_str,
+            "value": total_value
+        })
+
+    # Sort and limit history
+    history.sort(key=lambda x: x['date'])
+    if len(history) > MAX_HISTORY_DAYS:
+        history = history[-MAX_HISTORY_DAYS:]
+
     # Calculate Global Summaries
+    total_capital = config.get("total_capital", 100000000)
+    total_pnl_all = total_value - total_capital
+
+    # Daily P&L from history (today vs previous day)
+    daily_pnl_all = 0
+    daily_return = 0.0
+    if prev_value is not None and prev_value > 0:
+        daily_pnl_all = total_value - prev_value
+        daily_return = round((daily_pnl_all / prev_value) * 100, 2)
+
     if total_value > 0:
         cash_percent = round((total_cash_all / total_value) * 100, 2)
-        total_rate = round((total_pnl_all / (total_value - total_pnl_all)) * 100, 2)
-
-        start_value_day = total_value - daily_pnl_all
-        daily_return = 0.0
-        if start_value_day > 0:
-            daily_return = round((daily_pnl_all / start_value_day) * 100, 2)
+        total_rate = round((total_pnl_all / total_capital) * 100, 2)
     else:
         cash_percent = 0.0
         total_rate = 0.0
-        daily_return = 0.0
 
     summary_obj = {
         "total_value": total_value,
@@ -177,28 +211,6 @@ def fetch_and_generate_portfolio(kiwoom):
         "cash": total_cash_all,
         "cash_percent": cash_percent
     }
-
-    # Load and Update History
-    portfolio = load_portfolio()
-    history = portfolio.get("history", [])
-
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
-
-    # Check if today exists, update it if so, else append
-    todays_entry = next((item for item in history if item["date"] == today_str), None)
-
-    if todays_entry:
-        todays_entry["value"] = total_value
-    else:
-        history.append({
-            "date": today_str,
-            "value": total_value
-        })
-
-    # Sort history by date and limit to last 60 days
-    history.sort(key=lambda x: x['date'])
-    if len(history) > MAX_HISTORY_DAYS:
-        history = history[-MAX_HISTORY_DAYS:]
 
     # --- Virtual Accounts Logic ---
     virtual_accounts_data = []
@@ -270,6 +282,12 @@ def fetch_and_generate_portfolio(kiwoom):
                 target_profit = params.get("target_profit", 0)
                 dip = params.get("dip", 0)
 
+                # Count buy and sell transactions, and sum realized P&L
+                history = va.get("history", [])
+                buy_count = sum(1 for t in history if t.get("action") == "BUY")
+                sell_count = sum(1 for t in history if t.get("action") == "SELL")
+                realized_pnl = int(sum(t.get("pnl", 0) for t in history if t.get("action") == "SELL"))
+
                 virtual_accounts_data.append({
                     "name": v_name,
                     "real_account_ref": target_acc_name,
@@ -280,7 +298,10 @@ def fetch_and_generate_portfolio(kiwoom):
                     "total_value": v_total,
                     "cash": v_cash,
                     "equity": v_equity,
-                    "total_pnl": v_pnl,
+                    "unrealized_pnl": v_pnl,
+                    "realized_pnl": realized_pnl,
+                    "buy_count": buy_count,
+                    "sell_count": sell_count,
                     "sector": sector
                 })
 
@@ -342,6 +363,15 @@ def fetch_and_generate_portfolio(kiwoom):
 
         except Exception as e:
             print(f"Error processing virtual accounts: {e}")
+
+    # Add realized/unrealized P&L totals to summary
+    # Realized P&L: sum from virtual account sell history
+    total_realized = sum(va.get("realized_pnl", 0) for va in virtual_accounts_data)
+    # Unrealized P&L: derive from total return - realized to ensure consistency
+    # (total_return = unrealized + realized)
+    total_unrealized = total_pnl_all - total_realized
+    summary_obj["realized_pnl"] = total_realized
+    summary_obj["unrealized_pnl"] = total_unrealized
 
     # Final Structure
     final_json = {
