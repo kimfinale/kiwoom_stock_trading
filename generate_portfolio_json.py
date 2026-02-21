@@ -28,12 +28,17 @@ PORTFOLIO_FILE = os.path.join(OUTPUT_DIR, "portfolio.json")
 MAX_HISTORY_DAYS = 60
 
 def load_portfolio(filepath=PORTFOLIO_FILE):
+    print(f"[DEBUG] load_portfolio called with filepath: {filepath}")
+    print(f"[DEBUG] File exists: {os.path.exists(filepath)}")
     if os.path.exists(filepath):
         try:
             with open(filepath, "r", encoding="utf-8") as f:
-                return json.load(f)
+                data = json.load(f)
+                print(f"[DEBUG] Loaded portfolio with {len(data.get('history', []))} history entries")
+                return data
         except Exception as e:
             print(f"Error loading existing portfolio: {e}")
+    print(f"[DEBUG] Returning DEFAULT_PORTFOLIO (empty history)")
     return DEFAULT_PORTFOLIO
 
 def fetch_and_generate_portfolio(kiwoom):
@@ -158,9 +163,11 @@ def fetch_and_generate_portfolio(kiwoom):
     # Load and Update History (before summary so we can compute daily P&L)
     portfolio = load_portfolio()
     history = portfolio.get("history", [])
+    print(f"[DEBUG] Initial history length: {len(history)}")
     history.sort(key=lambda x: x['date'])
 
     today_str = datetime.date.today().strftime("%Y-%m-%d")
+    print(f"[DEBUG] Today's date: {today_str}")
 
     # Find previous day's value for daily P&L calculation
     prev_value = None
@@ -172,8 +179,10 @@ def fetch_and_generate_portfolio(kiwoom):
     # Update or append today's entry
     todays_entry = next((item for item in history if item["date"] == today_str), None)
     if todays_entry:
+        print(f"[DEBUG] Updating existing entry for {today_str}")
         todays_entry["value"] = total_value
     else:
+        print(f"[DEBUG] Adding new entry for {today_str}")
         history.append({
             "date": today_str,
             "value": total_value
@@ -183,6 +192,8 @@ def fetch_and_generate_portfolio(kiwoom):
     history.sort(key=lambda x: x['date'])
     if len(history) > MAX_HISTORY_DAYS:
         history = history[-MAX_HISTORY_DAYS:]
+
+    print(f"[DEBUG] Final history length: {len(history)}")
 
     # Calculate Global Summaries
     total_capital = config.get("total_capital", 100000000)
@@ -383,11 +394,14 @@ def fetch_and_generate_portfolio(kiwoom):
     }
 
     # Save
+    print(f"[DEBUG] Saving to: {PORTFOLIO_FILE}")
+    print(f"[DEBUG] Saving {len(final_json.get('history', []))} history entries")
     with open(PORTFOLIO_FILE, "w", encoding="utf-8") as f:
         json.dump(final_json, f, ensure_ascii=False, indent=2)
 
     print(f"Successfully generated {PORTFOLIO_FILE}")
-    print(json.dumps(final_json, indent=2, ensure_ascii=False))
+    # Don't print the entire JSON to reduce log spam
+    # print(json.dumps(final_json, indent=2, ensure_ascii=False))
     return True
 
 def main():
