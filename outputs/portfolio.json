@@ -1,27 +1,32 @@
 {
   "summary": {
-    "total_value": 101758609,
+    "total_value": 101763433,
     "daily_pnl": 0,
     "daily_return": 0.0,
-    "total_pnl": 1758609,
+    "total_pnl": 1763433,
     "total_return": 1.76,
-    "cash": 21600729,
-    "cash_percent": 21.23,
+    "cash": 17697483,
+    "cash_percent": 17.39,
     "realized_pnl": 2308928,
-    "unrealized_pnl": -550319
+    "unrealized_pnl": -545495
   },
-  "history": [],
+  "history": [
+    {
+      "date": "2026-02-23",
+      "value": 101763433
+    }
+  ],
   "holdings": [
     {
       "name": "한국앤컴퍼니",
       "symbol": "000240",
       "sector": "Automotive",
-      "quantity": 42,
-      "avg_price": 34543,
-      "current_price": 33850,
-      "value": 1421700,
-      "pnl": -41982,
-      "pnl_percent": -2.89,
+      "quantity": 51,
+      "avg_price": 34429,
+      "current_price": 33900,
+      "value": 1728900,
+      "pnl": -42647,
+      "pnl_percent": -2.43,
       "account": "Account 8119599511"
     },
     {
@@ -30,10 +35,10 @@
       "sector": "Pharma",
       "quantity": 18,
       "avg_price": 117983,
-      "current_price": 119900,
-      "value": 2158200,
-      "pnl": 15204,
-      "pnl_percent": 0.72,
+      "current_price": 120300,
+      "value": 2165400,
+      "pnl": 22370,
+      "pnl_percent": 1.05,
       "account": "Account 8119599511"
     },
     {
@@ -42,10 +47,10 @@
       "sector": "Electronics",
       "quantity": 4,
       "avg_price": 886000,
-      "current_price": 947000,
-      "value": 3788000,
-      "pnl": 210774,
-      "pnl_percent": 5.95,
+      "current_price": 948000,
+      "value": 3792000,
+      "pnl": 214746,
+      "pnl_percent": 6.06,
       "account": "Account 8119599511"
     },
     {
@@ -66,10 +71,10 @@
       "sector": "Semiconductors",
       "quantity": 63,
       "avg_price": 91711,
-      "current_price": 91700,
-      "value": 5777100,
-      "pnl": -52689,
-      "pnl_percent": -0.91,
+      "current_price": 92000,
+      "value": 5796000,
+      "pnl": -33898,
+      "pnl_percent": -0.59,
       "account": "Account 8119599511"
     },
     {
@@ -78,10 +83,10 @@
       "sector": "Electronics",
       "quantity": 22,
       "avg_price": 190341,
-      "current_price": 191900,
-      "value": 4221800,
-      "pnl": -3562,
-      "pnl_percent": -0.09,
+      "current_price": 191750,
+      "value": 4218500,
+      "pnl": -6846,
+      "pnl_percent": -0.16,
       "account": "Account 8119599511"
     },
     {
@@ -100,12 +105,12 @@
       "name": "SK가스",
       "symbol": "018670",
       "sector": "Utilities",
-      "quantity": 13,
-      "avg_price": 241558,
+      "quantity": 14,
+      "avg_price": 241875,
       "current_price": 246000,
-      "value": 3198000,
-      "pnl": 29174,
-      "pnl_percent": 0.93,
+      "value": 3444000,
+      "pnl": 26962,
+      "pnl_percent": 0.8,
       "account": "Account 8119599511"
     },
     {
@@ -124,24 +129,24 @@
       "name": "한글과컴퓨터",
       "symbol": "030520",
       "sector": "Software",
-      "quantity": 62,
-      "avg_price": 23690,
+      "quantity": 64,
+      "avg_price": 23679,
       "current_price": 23350,
-      "value": 1447700,
-      "pnl": -34195,
-      "pnl_percent": -2.33,
+      "value": 1494400,
+      "pnl": -34568,
+      "pnl_percent": -2.28,
       "account": "Account 8119599511"
     },
     {
       "name": "LG유플러스",
       "symbol": "032640",
       "sector": "Telecom",
-      "quantity": 132,
-      "avg_price": 17288,
-      "current_price": 17130,
-      "value": 2261160,
-      "pnl": -41299,
-      "pnl_percent": -1.81,
+      "quantity": 155,
+      "avg_price": 17265,
+      "current_price": 17120,
+      "value": 2653600,
+      "pnl": -46384,
+      "pnl_percent": -1.73,
       "account": "Account 8119599511"
     },
     {
@@ -150,34 +155,34 @@
       "sector": "Internet",
       "quantity": 15,
       "avg_price": 252650,
-      "current_price": 255000,
-      "value": 3825000,
-      "pnl": 961,
-      "pnl_percent": 0.03,
+      "current_price": 255250,
+      "value": 3828750,
+      "pnl": 4683,
+      "pnl_percent": 0.12,
       "account": "Account 8119599511"
     },
     {
       "name": "현대로템",
       "symbol": "064350",
       "sector": "Defense",
-      "quantity": 1,
-      "avg_price": 222750,
+      "quantity": 2,
+      "avg_price": 221375,
       "current_price": 220000,
-      "value": 220000,
-      "pnl": -4730,
-      "pnl_percent": -2.12,
+      "value": 440000,
+      "pnl": -6710,
+      "pnl_percent": -1.52,
       "account": "Account 8119599511"
     },
     {
       "name": "SOOP",
       "symbol": "067160",
       "sector": "Internet",
-      "quantity": 27,
-      "avg_price": 70368,
-      "current_price": 71300,
-      "value": 1925100,
-      "pnl": 7948,
-      "pnl_percent": 0.42,
+      "quantity": 32,
+      "avg_price": 70514,
+      "current_price": 71400,
+      "value": 2284800,
+      "pnl": 7919,
+      "pnl_percent": 0.35,
       "account": "Account 8119599511"
     },
     {
@@ -186,22 +191,22 @@
       "sector": "Finance",
       "quantity": 16,
       "avg_price": 286891,
-      "current_price": 278000,
-      "value": 4448000,
-      "pnl": -182766,
-      "pnl_percent": -3.98,
+      "current_price": 277500,
+      "value": 4440000,
+      "pnl": -190730,
+      "pnl_percent": -4.16,
       "account": "Account 8119599511"
     },
     {
       "name": "미스토홀딩스",
       "symbol": "081660",
       "sector": "Holdings",
-      "quantity": 31,
-      "avg_price": 53260,
+      "quantity": 38,
+      "avg_price": 53304,
       "current_price": 53500,
-      "value": 1658500,
-      "pnl": -7455,
-      "pnl_percent": -0.45,
+      "value": 2033000,
+      "pnl": -10824,
+      "pnl_percent": -0.53,
       "account": "Account 8119599511"
     },
     {
@@ -210,22 +215,22 @@
       "sector": "Logistics",
       "quantity": 15,
       "avg_price": 258825,
-      "current_price": 264500,
-      "value": 3967500,
-      "pnl": 49731,
-      "pnl_percent": 1.28,
+      "current_price": 265000,
+      "value": 3975000,
+      "pnl": 57186,
+      "pnl_percent": 1.47,
       "account": "Account 8119599511"
     },
     {
       "name": "SNT에너지",
       "symbol": "100840",
       "sector": "Energy",
-      "quantity": 61,
-      "avg_price": 48375,
-      "current_price": 47400,
-      "value": 2891400,
-      "pnl": -85662,
-      "pnl_percent": -2.9,
+      "quantity": 69,
+      "avg_price": 48296,
+      "current_price": 47650,
+      "value": 3287850,
+      "pnl": -74334,
+      "pnl_percent": -2.23,
       "account": "Account 8119599511"
     },
     {
@@ -234,10 +239,10 @@
       "sector": "Automotive",
       "quantity": 52,
       "avg_price": 74005,
-      "current_price": 73300,
-      "value": 3811600,
-      "pnl": -71103,
-      "pnl_percent": -1.85,
+      "current_price": 73000,
+      "value": 3796000,
+      "pnl": -86613,
+      "pnl_percent": -2.25,
       "account": "Account 8119599511"
     },
     {
@@ -256,12 +261,12 @@
       "name": "휴메딕스",
       "symbol": "200670",
       "sector": "Pharma",
-      "quantity": 53,
-      "avg_price": 44085,
-      "current_price": 43600,
-      "value": 2310800,
-      "pnl": -46571,
-      "pnl_percent": -1.99,
+      "quantity": 62,
+      "avg_price": 44036,
+      "current_price": 43750,
+      "value": 2712500,
+      "pnl": -42215,
+      "pnl_percent": -1.55,
       "account": "Account 8119599511"
     },
     {
@@ -282,34 +287,34 @@
       "sector": "Games",
       "quantity": 17,
       "avg_price": 258882,
-      "current_price": 259500,
-      "value": 4411500,
-      "pnl": -29162,
-      "pnl_percent": -0.66,
+      "current_price": 259000,
+      "value": 4403000,
+      "pnl": -37615,
+      "pnl_percent": -0.85,
       "account": "Account 8119599511"
     },
     {
       "name": "LX홀딩스",
       "symbol": "383800",
       "sector": "Conglomerate",
-      "quantity": 133,
-      "avg_price": 9672,
-      "current_price": 9520,
-      "value": 1266160,
-      "pnl": -31672,
-      "pnl_percent": -2.46,
+      "quantity": 175,
+      "avg_price": 9631,
+      "current_price": 9510,
+      "value": 1664250,
+      "pnl": -36158,
+      "pnl_percent": -2.15,
       "account": "Account 8119599511"
     },
     {
       "name": "대한조선",
       "symbol": "439260",
       "sector": "Shipbuilding",
-      "quantity": 12,
-      "avg_price": 90433,
-      "current_price": 89700,
-      "value": 1076400,
-      "pnl": -18502,
-      "pnl_percent": -1.7,
+      "quantity": 16,
+      "avg_price": 90375,
+      "current_price": 90100,
+      "value": 1441600,
+      "pnl": -17382,
+      "pnl_percent": -1.2,
       "account": "Account 8119599511"
     },
     {
@@ -328,42 +333,42 @@
       "name": "삼양컴텍",
       "symbol": "484590",
       "sector": "Defense",
-      "quantity": 104,
-      "avg_price": 12485,
-      "current_price": 12540,
-      "value": 1304160,
-      "pnl": -6008,
-      "pnl_percent": -0.46,
+      "quantity": 135,
+      "avg_price": 12509,
+      "current_price": 12580,
+      "value": 1698300,
+      "pnl": -5696,
+      "pnl_percent": -0.34,
       "account": "Account 8119599511"
     }
   ],
   "accounts": [
     {
       "name": "Account 8119599511",
-      "total_value": 101758609,
-      "cash": 21600729,
-      "equity": 80157880
+      "total_value": 101763433,
+      "cash": 17697483,
+      "equity": 84065950
     }
   ],
   "virtual_accounts": [
     {
-      "name": "Samsung_1",
+      "name": "삼성전자_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4600500,
+      "total_value": 4597200,
       "cash": 378700,
-      "equity": 4221800,
-      "unrealized_pnl": 35300,
+      "equity": 4218500,
+      "unrealized_pnl": 32000,
       "realized_pnl": 542952,
       "buy_count": 21,
       "sell_count": 1,
       "sector": "Electronics"
     },
     {
-      "name": "Samsung_2",
+      "name": "삼성전자_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -379,7 +384,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "Samsung_3",
+      "name": "삼성전자_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -395,7 +400,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "Samsung_4",
+      "name": "삼성전자_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -411,7 +416,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "Samsung_5",
+      "name": "삼성전자_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -427,23 +432,23 @@
       "sector": "Electronics"
     },
     {
-      "name": "LGUplus_1",
+      "name": "LG유플러스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3976535,
-      "cash": 1715375,
-      "equity": 2261160,
-      "unrealized_pnl": -23465,
+      "total_value": 3975215,
+      "cash": 1321615,
+      "equity": 2653600,
+      "unrealized_pnl": -24785,
       "realized_pnl": 0,
-      "buy_count": 68,
+      "buy_count": 69,
       "sell_count": 0,
       "sector": "Telecom"
     },
     {
-      "name": "LGUplus_2",
+      "name": "LG유플러스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -459,7 +464,7 @@
       "sector": "Telecom"
     },
     {
-      "name": "LGUplus_3",
+      "name": "LG유플러스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -475,7 +480,7 @@
       "sector": "Telecom"
     },
     {
-      "name": "LGUplus_4",
+      "name": "LG유플러스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -491,7 +496,7 @@
       "sector": "Telecom"
     },
     {
-      "name": "LGUplus_5",
+      "name": "LG유플러스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -507,39 +512,39 @@
       "sector": "Telecom"
     },
     {
-      "name": "Krafton_1",
+      "name": "크래프톤_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4005500,
+      "total_value": 3998000,
       "cash": 113000,
-      "equity": 3892500,
-      "unrealized_pnl": 5500,
+      "equity": 3885000,
+      "unrealized_pnl": -2000,
       "realized_pnl": 0,
       "buy_count": 15,
       "sell_count": 0,
       "sector": "Games"
     },
     {
-      "name": "Krafton_2",
+      "name": "크래프톤_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1505000,
+      "total_value": 1504000,
       "cash": 986000,
-      "equity": 519000,
-      "unrealized_pnl": 5000,
+      "equity": 518000,
+      "unrealized_pnl": 4000,
       "realized_pnl": 0,
       "buy_count": 2,
       "sell_count": 0,
       "sector": "Games"
     },
     {
-      "name": "Krafton_3",
+      "name": "크래프톤_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -555,7 +560,7 @@
       "sector": "Games"
     },
     {
-      "name": "Krafton_4",
+      "name": "크래프톤_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -571,7 +576,7 @@
       "sector": "Games"
     },
     {
-      "name": "Krafton_5",
+      "name": "크래프톤_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -667,7 +672,7 @@
       "sector": "Telecom"
     },
     {
-      "name": "KEPCO_1",
+      "name": "한국전력_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
@@ -683,7 +688,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "KEPCO_2",
+      "name": "한국전력_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -699,7 +704,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "KEPCO_3",
+      "name": "한국전력_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -715,7 +720,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "KEPCO_4",
+      "name": "한국전력_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -731,7 +736,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "KEPCO_5",
+      "name": "한국전력_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -747,23 +752,23 @@
       "sector": "Utilities"
     },
     {
-      "name": "SKHynix_1",
+      "name": "SK하이닉스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4236000,
+      "total_value": 4240000,
       "cash": 448000,
-      "equity": 3788000,
-      "unrealized_pnl": 236000,
+      "equity": 3792000,
+      "unrealized_pnl": 240000,
       "realized_pnl": 0,
       "buy_count": 4,
       "sell_count": 0,
       "sector": "Electronics"
     },
     {
-      "name": "SKHynix_2",
+      "name": "SK하이닉스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -779,7 +784,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "SKHynix_3",
+      "name": "SK하이닉스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -795,7 +800,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "SKHynix_4",
+      "name": "SK하이닉스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -811,7 +816,7 @@
       "sector": "Electronics"
     },
     {
-      "name": "SKHynix_5",
+      "name": "SK하이닉스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -827,23 +832,23 @@
       "sector": "Electronics"
     },
     {
-      "name": "HyundaiGlovis_1",
+      "name": "현대글로비스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4072500,
+      "total_value": 4080000,
       "cash": 105000,
-      "equity": 3967500,
-      "unrealized_pnl": 72500,
+      "equity": 3975000,
+      "unrealized_pnl": 80000,
       "realized_pnl": 0,
       "buy_count": 15,
       "sell_count": 0,
       "sector": "Logistics"
     },
     {
-      "name": "HyundaiGlovis_2",
+      "name": "현대글로비스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -859,7 +864,7 @@
       "sector": "Logistics"
     },
     {
-      "name": "HyundaiGlovis_3",
+      "name": "현대글로비스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -875,7 +880,7 @@
       "sector": "Logistics"
     },
     {
-      "name": "HyundaiGlovis_4",
+      "name": "현대글로비스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -891,7 +896,7 @@
       "sector": "Logistics"
     },
     {
-      "name": "HyundaiGlovis_5",
+      "name": "현대글로비스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -907,23 +912,23 @@
       "sector": "Logistics"
     },
     {
-      "name": "HyundaiRotem_1",
+      "name": "현대로템_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4401500,
-      "cash": 4181500,
-      "equity": 220000,
-      "unrealized_pnl": -3000,
+      "total_value": 4402000,
+      "cash": 3962000,
+      "equity": 440000,
+      "unrealized_pnl": -2500,
       "realized_pnl": 404500,
-      "buy_count": 20,
+      "buy_count": 21,
       "sell_count": 1,
       "sector": "Defense"
     },
     {
-      "name": "HyundaiRotem_2",
+      "name": "현대로템_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -939,7 +944,7 @@
       "sector": "Defense"
     },
     {
-      "name": "HyundaiRotem_3",
+      "name": "현대로템_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -955,7 +960,7 @@
       "sector": "Defense"
     },
     {
-      "name": "HyundaiRotem_4",
+      "name": "현대로템_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -971,7 +976,7 @@
       "sector": "Defense"
     },
     {
-      "name": "HyundaiRotem_5",
+      "name": "현대로템_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -987,23 +992,23 @@
       "sector": "Defense"
     },
     {
-      "name": "KoreaInv_1",
+      "name": "한국금융지주_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4506750,
+      "total_value": 4498750,
       "cash": 58750,
-      "equity": 4448000,
-      "unrealized_pnl": -140750,
+      "equity": 4440000,
+      "unrealized_pnl": -148750,
       "realized_pnl": 647500,
       "buy_count": 32,
       "sell_count": 1,
       "sector": "Finance"
     },
     {
-      "name": "KoreaInv_2",
+      "name": "한국금융지주_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1019,7 +1024,7 @@
       "sector": "Finance"
     },
     {
-      "name": "KoreaInv_3",
+      "name": "한국금융지주_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1035,7 +1040,7 @@
       "sector": "Finance"
     },
     {
-      "name": "KoreaInv_4",
+      "name": "한국금융지주_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1051,7 +1056,7 @@
       "sector": "Finance"
     },
     {
-      "name": "KoreaInv_5",
+      "name": "한국금융지주_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1067,7 +1072,7 @@
       "sector": "Finance"
     },
     {
-      "name": "Netmarble_1",
+      "name": "넷마블_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
@@ -1083,7 +1088,7 @@
       "sector": "Games"
     },
     {
-      "name": "Netmarble_2",
+      "name": "넷마블_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1099,7 +1104,7 @@
       "sector": "Games"
     },
     {
-      "name": "Netmarble_3",
+      "name": "넷마블_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1115,7 +1120,7 @@
       "sector": "Games"
     },
     {
-      "name": "Netmarble_4",
+      "name": "넷마블_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1131,7 +1136,7 @@
       "sector": "Games"
     },
     {
-      "name": "Netmarble_5",
+      "name": "넷마블_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1147,23 +1152,23 @@
       "sector": "Games"
     },
     {
-      "name": "HankookTire_1",
+      "name": "한국타이어앤테크놀로지_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3962900,
+      "total_value": 3947300,
       "cash": 151300,
-      "equity": 3811600,
-      "unrealized_pnl": -37100,
+      "equity": 3796000,
+      "unrealized_pnl": -52700,
       "realized_pnl": 0,
       "buy_count": 40,
       "sell_count": 0,
       "sector": "Automotive"
     },
     {
-      "name": "HankookTire_2",
+      "name": "한국타이어앤테크놀로지_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1179,7 +1184,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookTire_3",
+      "name": "한국타이어앤테크놀로지_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1195,7 +1200,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookTire_4",
+      "name": "한국타이어앤테크놀로지_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1211,7 +1216,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookTire_5",
+      "name": "한국타이어앤테크놀로지_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1227,7 +1232,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "KolmarKorea_1",
+      "name": "한국콜마_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
@@ -1243,7 +1248,7 @@
       "sector": "Cosmetics"
     },
     {
-      "name": "KolmarKorea_2",
+      "name": "한국콜마_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1259,7 +1264,7 @@
       "sector": "Cosmetics"
     },
     {
-      "name": "KolmarKorea_3",
+      "name": "한국콜마_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1275,7 +1280,7 @@
       "sector": "Cosmetics"
     },
     {
-      "name": "KolmarKorea_4",
+      "name": "한국콜마_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1291,7 +1296,7 @@
       "sector": "Cosmetics"
     },
     {
-      "name": "KolmarKorea_5",
+      "name": "한국콜마_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1307,23 +1312,23 @@
       "sector": "Cosmetics"
     },
     {
-      "name": "SNTEnergy_1",
+      "name": "SNT에너지_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3940900,
-      "cash": 1049500,
-      "equity": 2891400,
-      "unrealized_pnl": -59100,
+      "total_value": 3956150,
+      "cash": 668300,
+      "equity": 3287850,
+      "unrealized_pnl": -43850,
       "realized_pnl": 0,
-      "buy_count": 40,
+      "buy_count": 41,
       "sell_count": 0,
       "sector": "Energy"
     },
     {
-      "name": "SNTEnergy_2",
+      "name": "SNT에너지_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1339,7 +1344,7 @@
       "sector": "Energy"
     },
     {
-      "name": "SNTEnergy_3",
+      "name": "SNT에너지_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1355,7 +1360,7 @@
       "sector": "Energy"
     },
     {
-      "name": "SNTEnergy_4",
+      "name": "SNT에너지_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1371,7 +1376,7 @@
       "sector": "Energy"
     },
     {
-      "name": "SNTEnergy_5",
+      "name": "SNT에너지_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1387,55 +1392,55 @@
       "sector": "Energy"
     },
     {
-      "name": "DBHiTek_1",
+      "name": "DB하이텍_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3976900,
+      "total_value": 3989200,
       "cash": 217200,
-      "equity": 3759700,
-      "unrealized_pnl": -23100,
+      "equity": 3772000,
+      "unrealized_pnl": -10800,
       "realized_pnl": 0,
       "buy_count": 38,
       "sell_count": 0,
       "sector": "Semiconductors"
     },
     {
-      "name": "DBHiTek_2",
+      "name": "DB하이텍_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1498600,
+      "total_value": 1503400,
       "cash": 31400,
-      "equity": 1467200,
-      "unrealized_pnl": -1400,
+      "equity": 1472000,
+      "unrealized_pnl": 3400,
       "realized_pnl": 0,
       "buy_count": 16,
       "sell_count": 0,
       "sector": "Semiconductors"
     },
     {
-      "name": "DBHiTek_3",
+      "name": "DB하이텍_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 2.0,
-      "total_value": 1513800,
+      "total_value": 1515600,
       "cash": 963600,
-      "equity": 550200,
-      "unrealized_pnl": 100,
+      "equity": 552000,
+      "unrealized_pnl": 1900,
       "realized_pnl": 13700,
       "buy_count": 11,
       "sell_count": 1,
       "sector": "Semiconductors"
     },
     {
-      "name": "DBHiTek_4",
+      "name": "DB하이텍_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1451,7 +1456,7 @@
       "sector": "Semiconductors"
     },
     {
-      "name": "DBHiTek_5",
+      "name": "DB하이텍_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1467,23 +1472,23 @@
       "sector": "Semiconductors"
     },
     {
-      "name": "DaehanShipbuilding_1",
+      "name": "대한조선_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4531400,
-      "cash": 3455000,
-      "equity": 1076400,
-      "unrealized_pnl": -10400,
+      "total_value": 4535800,
+      "cash": 3094200,
+      "equity": 1441600,
+      "unrealized_pnl": -6000,
       "realized_pnl": 541799,
-      "buy_count": 40,
+      "buy_count": 41,
       "sell_count": 1,
       "sector": "Shipbuilding"
     },
     {
-      "name": "DaehanShipbuilding_2",
+      "name": "대한조선_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1499,7 +1504,7 @@
       "sector": "Shipbuilding"
     },
     {
-      "name": "DaehanShipbuilding_3",
+      "name": "대한조선_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1515,7 +1520,7 @@
       "sector": "Shipbuilding"
     },
     {
-      "name": "DaehanShipbuilding_4",
+      "name": "대한조선_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1531,7 +1536,7 @@
       "sector": "Shipbuilding"
     },
     {
-      "name": "DaehanShipbuilding_5",
+      "name": "대한조선_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1547,7 +1552,7 @@
       "sector": "Shipbuilding"
     },
     {
-      "name": "Hanwha_1",
+      "name": "한화_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
@@ -1563,7 +1568,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "Hanwha_2",
+      "name": "한화_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1579,7 +1584,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "Hanwha_3",
+      "name": "한화_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1595,7 +1600,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "Hanwha_4",
+      "name": "한화_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1611,7 +1616,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "Hanwha_5",
+      "name": "한화_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1633,10 +1638,10 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4036500,
+      "total_value": 4040250,
       "cash": 211500,
-      "equity": 3825000,
-      "unrealized_pnl": 36500,
+      "equity": 3828750,
+      "unrealized_pnl": 40250,
       "realized_pnl": 0,
       "buy_count": 15,
       "sell_count": 0,
@@ -1707,23 +1712,23 @@
       "sector": "Internet"
     },
     {
-      "name": "ShiftUp_1",
+      "name": "시프트업_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
       "total_value": 4001100,
-      "cash": 2549850,
-      "equity": 1451250,
+      "cash": 2178600,
+      "equity": 1822500,
       "unrealized_pnl": 1100,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Games"
     },
     {
-      "name": "ShiftUp_2",
+      "name": "시프트업_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1739,7 +1744,7 @@
       "sector": "Games"
     },
     {
-      "name": "ShiftUp_3",
+      "name": "시프트업_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1755,7 +1760,7 @@
       "sector": "Games"
     },
     {
-      "name": "ShiftUp_4",
+      "name": "시프트업_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1771,7 +1776,7 @@
       "sector": "Games"
     },
     {
-      "name": "ShiftUp_5",
+      "name": "시프트업_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1787,23 +1792,23 @@
       "sector": "Games"
     },
     {
-      "name": "SKGas_1",
+      "name": "SK가스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
       "total_value": 4057500,
-      "cash": 859500,
-      "equity": 3198000,
+      "cash": 613500,
+      "equity": 3444000,
       "unrealized_pnl": 57500,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Utilities"
     },
     {
-      "name": "SKGas_2",
+      "name": "SK가스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1819,7 +1824,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "SKGas_3",
+      "name": "SK가스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1835,7 +1840,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "SKGas_4",
+      "name": "SK가스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1851,7 +1856,7 @@
       "sector": "Utilities"
     },
     {
-      "name": "SKGas_5",
+      "name": "SK가스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1867,23 +1872,23 @@
       "sector": "Utilities"
     },
     {
-      "name": "MistoHoldings_1",
+      "name": "미스토홀딩스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
       "total_value": 4006250,
-      "cash": 2347750,
-      "equity": 1658500,
+      "cash": 1973250,
+      "equity": 2033000,
       "unrealized_pnl": 6250,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Holdings"
     },
     {
-      "name": "MistoHoldings_2",
+      "name": "미스토홀딩스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1899,7 +1904,7 @@
       "sector": "Holdings"
     },
     {
-      "name": "MistoHoldings_3",
+      "name": "미스토홀딩스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1915,7 +1920,7 @@
       "sector": "Holdings"
     },
     {
-      "name": "MistoHoldings_4",
+      "name": "미스토홀딩스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1931,7 +1936,7 @@
       "sector": "Holdings"
     },
     {
-      "name": "MistoHoldings_5",
+      "name": "미스토홀딩스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1947,23 +1952,23 @@
       "sector": "Holdings"
     },
     {
-      "name": "LXHoldings_1",
+      "name": "LX홀딩스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3979940,
-      "cash": 2713780,
-      "equity": 1266160,
-      "unrealized_pnl": -20060,
+      "total_value": 3978610,
+      "cash": 2314360,
+      "equity": 1664250,
+      "unrealized_pnl": -21390,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Conglomerate"
     },
     {
-      "name": "LXHoldings_2",
+      "name": "LX홀딩스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1979,7 +1984,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "LXHoldings_3",
+      "name": "LX홀딩스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -1995,7 +2000,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "LXHoldings_4",
+      "name": "LX홀딩스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2011,7 +2016,7 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "LXHoldings_5",
+      "name": "LX홀딩스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2027,23 +2032,23 @@
       "sector": "Conglomerate"
     },
     {
-      "name": "Hancom_1",
+      "name": "한글과컴퓨터_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3979500,
-      "cash": 2625200,
-      "equity": 1354300,
-      "unrealized_pnl": -20500,
+      "total_value": 3980350,
+      "cash": 2229100,
+      "equity": 1751250,
+      "unrealized_pnl": -19650,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Software"
     },
     {
-      "name": "Hancom_2",
+      "name": "한글과컴퓨터_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2059,7 +2064,7 @@
       "sector": "Software"
     },
     {
-      "name": "Hancom_3",
+      "name": "한글과컴퓨터_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2075,7 +2080,7 @@
       "sector": "Software"
     },
     {
-      "name": "Hancom_4",
+      "name": "한글과컴퓨터_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2091,7 +2096,7 @@
       "sector": "Software"
     },
     {
-      "name": "Hancom_5",
+      "name": "한글과컴퓨터_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2113,12 +2118,12 @@
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4021500,
-      "cash": 2239000,
-      "equity": 1782500,
-      "unrealized_pnl": 21500,
+      "total_value": 4025000,
+      "cash": 1883000,
+      "equity": 2142000,
+      "unrealized_pnl": 25000,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Internet"
     },
@@ -2129,10 +2134,10 @@
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1503200,
+      "total_value": 1503500,
       "cash": 1289300,
-      "equity": 213900,
-      "unrealized_pnl": 3200,
+      "equity": 214200,
+      "unrealized_pnl": 3500,
       "realized_pnl": 0,
       "buy_count": 3,
       "sell_count": 0,
@@ -2187,103 +2192,103 @@
       "sector": "Internet"
     },
     {
-      "name": "Humedix_1",
+      "name": "휴메딕스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3981450,
-      "cash": 2368250,
-      "equity": 1613200,
-      "unrealized_pnl": -18550,
+      "total_value": 3987000,
+      "cash": 1974500,
+      "equity": 2012500,
+      "unrealized_pnl": -13000,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "Humedix_2",
+      "name": "휴메딕스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 1.0,
-      "total_value": 1498050,
+      "total_value": 1498800,
       "cash": 1280050,
-      "equity": 218000,
-      "unrealized_pnl": -1950,
+      "equity": 218750,
+      "unrealized_pnl": -1200,
       "realized_pnl": 0,
       "buy_count": 5,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "Humedix_3",
+      "name": "휴메딕스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 2.0,
-      "total_value": 1497850,
+      "total_value": 1498450,
       "cash": 1323450,
-      "equity": 174400,
-      "unrealized_pnl": -2150,
+      "equity": 175000,
+      "unrealized_pnl": -1550,
       "realized_pnl": 0,
       "buy_count": 4,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "Humedix_4",
+      "name": "휴메딕스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 3.0,
-      "total_value": 1497900,
+      "total_value": 1498500,
       "cash": 1323500,
-      "equity": 174400,
-      "unrealized_pnl": -2100,
+      "equity": 175000,
+      "unrealized_pnl": -1500,
       "realized_pnl": 0,
       "buy_count": 4,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "Humedix_5",
+      "name": "휴메딕스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
       "rise_pct": 3.0,
       "dip_pct": 4.0,
-      "total_value": 1499500,
+      "total_value": 1500100,
       "cash": 1325100,
-      "equity": 174400,
-      "unrealized_pnl": -500,
+      "equity": 175000,
+      "unrealized_pnl": 100,
       "realized_pnl": 0,
       "buy_count": 4,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "SamyangComtech_1",
+      "name": "삼양컴텍_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4005580,
-      "cash": 2688880,
-      "equity": 1316700,
-      "unrealized_pnl": 5580,
+      "total_value": 4009470,
+      "cash": 2298590,
+      "equity": 1710880,
+      "unrealized_pnl": 9470,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Defense"
     },
     {
-      "name": "SamyangComtech_2",
+      "name": "삼양컴텍_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2299,7 +2304,7 @@
       "sector": "Defense"
     },
     {
-      "name": "SamyangComtech_3",
+      "name": "삼양컴텍_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2315,7 +2320,7 @@
       "sector": "Defense"
     },
     {
-      "name": "SamyangComtech_4",
+      "name": "삼양컴텍_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2331,7 +2336,7 @@
       "sector": "Defense"
     },
     {
-      "name": "SamyangComtech_5",
+      "name": "삼양컴텍_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2347,23 +2352,23 @@
       "sector": "Defense"
     },
     {
-      "name": "HankookCompany_1",
+      "name": "한국앤컴퍼니_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 3969550,
-      "cash": 2514000,
-      "equity": 1455550,
-      "unrealized_pnl": -30450,
+      "total_value": 3971700,
+      "cash": 2141100,
+      "equity": 1830600,
+      "unrealized_pnl": -28300,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Automotive"
     },
     {
-      "name": "HankookCompany_2",
+      "name": "한국앤컴퍼니_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2379,7 +2384,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookCompany_3",
+      "name": "한국앤컴퍼니_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2395,7 +2400,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookCompany_4",
+      "name": "한국앤컴퍼니_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2411,7 +2416,7 @@
       "sector": "Automotive"
     },
     {
-      "name": "HankookCompany_5",
+      "name": "한국앤컴퍼니_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2427,23 +2432,23 @@
       "sector": "Automotive"
     },
     {
-      "name": "DongASocio_1",
+      "name": "동아쏘시오홀딩스_1",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.04000000000000001,
       "strategy_type": "LEADER",
       "rise_pct": 10.0,
       "dip_pct": 0,
-      "total_value": 4036000,
-      "cash": 1757900,
-      "equity": 2278100,
-      "unrealized_pnl": 36000,
+      "total_value": 4043600,
+      "cash": 1397000,
+      "equity": 2646600,
+      "unrealized_pnl": 43600,
       "realized_pnl": 0,
-      "buy_count": 13,
+      "buy_count": 14,
       "sell_count": 0,
       "sector": "Pharma"
     },
     {
-      "name": "DongASocio_2",
+      "name": "동아쏘시오홀딩스_2",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2459,7 +2464,7 @@
       "sector": "Pharma"
     },
     {
-      "name": "DongASocio_3",
+      "name": "동아쏘시오홀딩스_3",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2475,7 +2480,7 @@
       "sector": "Pharma"
     },
     {
-      "name": "DongASocio_4",
+      "name": "동아쏘시오홀딩스_4",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
@@ -2491,7 +2496,7 @@
       "sector": "Pharma"
     },
     {
-      "name": "DongASocio_5",
+      "name": "동아쏘시오홀딩스_5",
       "real_account_ref": "Account 8119599511",
       "allocation_ratio": 0.015,
       "strategy_type": "FOLLOWER",
