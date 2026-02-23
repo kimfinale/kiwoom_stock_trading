@@ -244,11 +244,18 @@ def fetch_and_generate_portfolio(kiwoom):
             for h in holdings_list:
                 current_price_map[h['symbol']] = h['current_price']
 
-            # Build sector map from config strategies
+            # Build sector map and stock code map from config strategies
             strategy_sector_map = {}
+            strategy_code_map = {}
             if config and "strategies" in config:
                 for strategy in config["strategies"]:
                     strategy_sector_map[strategy["id"]] = strategy.get("sector", "Unknown")
+                    strategy_code_map[strategy["id"]] = strategy.get("stock_code", "")
+
+            # Build stock code → Korean name map from holdings
+            stock_name_map = {}
+            for h in holdings_list:
+                stock_name_map[h['symbol']] = h['name']
 
             target_acc_name = f"Account {config.get('real_account_id', '8119599511')}"
 
@@ -274,7 +281,13 @@ def fetch_and_generate_portfolio(kiwoom):
 
                 # Extract strategy ID from account_id (e.g., "Samsung_1" -> "Samsung")
                 strategy_id = "_".join(v_name.split("_")[:-1]) if "_" in v_name else v_name
+                suffix = v_name.split("_")[-1] if "_" in v_name else ""
                 sector = strategy_sector_map.get(strategy_id, "Unknown")
+
+                # Map to Korean stock name via stock code
+                s_code = strategy_code_map.get(strategy_id, "")
+                korean_name = stock_name_map.get(s_code, strategy_id)
+                display_name = f"{korean_name}_{suffix}" if suffix else korean_name
 
                 # Get allocation ratio from strategy config
                 s_config = va.get("strategy_config", {})
@@ -300,7 +313,7 @@ def fetch_and_generate_portfolio(kiwoom):
                 realized_pnl = int(sum(t.get("pnl", 0) for t in va_history if t.get("action") == "SELL"))
 
                 virtual_accounts_data.append({
-                    "name": v_name,
+                    "name": display_name,
                     "real_account_ref": target_acc_name,
                     "allocation_ratio": ratio * s_alloc,
                     "strategy_type": strategy_type,
@@ -355,14 +368,15 @@ def fetch_and_generate_portfolio(kiwoom):
                     for acc in strategy["accounts"]:
                         ratio = acc["ratio"]
                         suffix = acc["suffix"]
-                        v_name = f"{s_id}_{suffix}"
+                        korean_name = stock_name_map.get(stock_code, s_id)
+                        display_name = f"{korean_name}_{suffix}"
                         v_equity = int(actual_stock_value * ratio)
                         v_cash = int(strategy_cash * ratio)
                         v_pnl = int(actual_stock_pnl * ratio)
                         v_val = v_cash + v_equity
 
                         virtual_accounts_data.append({
-                            "name": v_name,
+                            "name": display_name,
                             "real_account_ref": target_acc_data['name'],
                             "allocation_ratio": ratio * s_alloc,
                             "total_value": v_val,
