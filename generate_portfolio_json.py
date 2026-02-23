@@ -294,10 +294,10 @@ def fetch_and_generate_portfolio(kiwoom):
                 dip = params.get("dip", 0)
 
                 # Count buy and sell transactions, and sum realized P&L
-                history = va.get("history", [])
-                buy_count = sum(1 for t in history if t.get("action") == "BUY")
-                sell_count = sum(1 for t in history if t.get("action") == "SELL")
-                realized_pnl = int(sum(t.get("pnl", 0) for t in history if t.get("action") == "SELL"))
+                va_history = va.get("history", [])
+                buy_count = sum(1 for t in va_history if t.get("action") == "BUY")
+                sell_count = sum(1 for t in va_history if t.get("action") == "SELL")
+                realized_pnl = int(sum(t.get("pnl", 0) for t in va_history if t.get("action") == "SELL"))
 
                 virtual_accounts_data.append({
                     "name": v_name,
