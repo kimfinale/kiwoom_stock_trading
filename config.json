@@ -4,8 +4,7 @@
     "dry_run": false,
     "ignore_market_hours": false,
     "execution_intervals": {
-        "check_interval_minutes": 1,
-        "leader_buy_interval_minutes": 20,
+        "check_interval_minutes": 5,
         "dashboard_interval_minutes": 10
     },
     "strategies": [
@@ -15,14 +14,16 @@
             "stock_name": "Samsung Electronics",
             "sector": "Electronics",
             "total_allocation_percent": 0.1,
-            "check_interval_minutes": 5,
             "accounts": [
                 {
                     "suffix": "1",
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -76,7 +77,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -130,7 +134,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -184,7 +191,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -238,7 +248,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -292,7 +305,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -346,7 +362,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -400,7 +419,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -454,7 +476,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -508,7 +533,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -562,7 +590,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -616,7 +647,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -670,7 +704,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -724,7 +761,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -778,7 +818,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -832,7 +875,10 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {
@@ -886,7 +932,580 @@
                     "ratio": 0.40,
                     "strategy_type": "LEADER",
                     "params": {
-                        "target_profit": 0.10
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ShiftUp",
+            "stock_code": "462870",
+            "stock_name": "ShiftUp",
+            "sector": "Games",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "SKGas",
+            "stock_code": "018670",
+            "stock_name": "SKGas",
+            "sector": "Utilities",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "MistoHoldings",
+            "stock_code": "081660",
+            "stock_name": "MistoHoldings",
+            "sector": "Holdings",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "LXHoldings",
+            "stock_code": "383800",
+            "stock_name": "LXHoldings",
+            "sector": "Conglomerate",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Hancom",
+            "stock_code": "030520",
+            "stock_name": "Hancom",
+            "sector": "Software",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "SOOP",
+            "stock_code": "067160",
+            "stock_name": "SOOP",
+            "sector": "Internet",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Humedix",
+            "stock_code": "200670",
+            "stock_name": "Humedix",
+            "sector": "Pharma",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "SamyangComtech",
+            "stock_code": "484590",
+            "stock_name": "SamyangComtech",
+            "sector": "Defense",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "HankookCompany",
+            "stock_code": "000240",
+            "stock_name": "HankookCompany",
+            "sector": "Automotive",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
+                    }
+                },
+                {
+                    "suffix": "2",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.01,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "3",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.02,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "4",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.03,
+                        "target_profit": 0.03
+                    }
+                },
+                {
+                    "suffix": "5",
+                    "ratio": 0.15,
+                    "strategy_type": "FOLLOWER",
+                    "params": {
+                        "dip": 0.04,
+                        "target_profit": 0.03
+                    }
+                }
+            ]
+        },
+        {
+            "id": "DongASocio",
+            "stock_code": "000640",
+            "stock_name": "DongASocio",
+            "sector": "Pharma",
+            "total_allocation_percent": 0.1,
+            "check_interval_minutes": 5,
+            "accounts": [
+                {
+                    "suffix": "1",
+                    "ratio": 0.40,
+                    "strategy_type": "LEADER",
+                    "params": {
+                        "target_profit": 0.10,
+                        "buy_amount": 200000,
+                        "price_lower_limit": 0,
+                        "price_upper_limit": null
                     }
                 },
                 {

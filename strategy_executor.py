@@ -1,4 +1,5 @@
 import datetime
+import random
 # from state_manager import StateManager # Deprecated
 # from kiwoom_api import Kiwoom # Injected dependency
 
@@ -8,8 +9,9 @@ class StrategyExecutor:
         self.accounts = accounts_map
         self.config = config
         self.is_dry_run = config.get("dry_run", True)
-        self.on_transaction_complete = on_transaction_complete  
+        self.on_transaction_complete = on_transaction_complete
         self.total_capital = config.get("total_capital", 0)
+        self._leader_last_buy_date = {}  # strategy_id -> "YYYY-MM-DD"
 
     def update_config(self, new_config):
         """Updates the configuration dynamically."""
@@ -35,8 +37,9 @@ class StrategyExecutor:
         
         for strategy in self.config["strategies"]:
             self.process_strategy(strategy, allow_leader_buy)
-            import time
-            time.sleep(0.5) # Prevent Rate Limiting
+            if not self.is_dry_run:
+                import time
+                time.sleep(0.5) # Prevent Rate Limiting
             
     def process_strategy(self, strategy, allow_leader_buy=True):
         s_id = strategy["id"]
@@ -85,168 +88,169 @@ class StrategyExecutor:
         
         # 2. Process Leader
         if leader_acc_cfg:
-            self.process_leader(leader_acc_cfg, code, current_price, allow_leader_buy)
-            
+            self.process_leader(leader_acc_cfg, code, current_price, allow_leader_buy, strategy_id=s_id)
+
         # 3. Process Followers
         if leader_acc_cfg and followers_cfg:
              self.process_followers(leader_acc_cfg, followers_cfg, code, current_price)
 
-    def process_leader(self, acc_config, code, current_price, allow_buy=True):
+    def process_leader(self, acc_config, code, current_price, allow_buy=True, strategy_id=None):
         acc_id = acc_config["account_id"]
         if acc_id not in self.accounts:
             print(f"  ⚠️  Account {acc_id} not found in state.")
             return
-            
+
         account = self.accounts[acc_id]
         params = acc_config["params"]
-        target_profit = params.get("target_profit", 0.1) # Default 10%
-        
+        target_profit = params.get("target_profit", 0.1)
+
         # --- Sell Logic ---
-        # Iterate over copy of values as we might delete
-        # Account.holdings key is Stock Code.
         if code in account.holdings:
              holding = account.holdings[code]
              qty = holding["qty"]
              avg_price = holding["avg_price"]
-             
+
              if qty > 0:
                  target_price = avg_price * (1 + target_profit)
-                 
+
                  if current_price >= target_price:
                      print(f"  [{acc_id}] SELL Signal: Current {current_price} >= Target {target_price:.0f} (Avg {avg_price:.0f})")
+                     pre_sell_balance = account.balance
                      self._execute_trade(account, code, "SELL", current_price, qty)
-        
+                     # Do not replenish leader balance — cumulative spending is capped by initial allocation
+                     account.balance = pre_sell_balance
+
         # --- Buy Logic ---
-        # Budget Check is now handled by Account.balance
-        # But we still run the strategy condition check (e.g. any additional strategy logic?)
-        # For LEADER, the logic seems to be: "Buy if we have money"? 
-        # The original code logic: "if used_amt + current_price <= acc_capital"
-        # Since Account.balance tracks available cash, we just heck if balance >= price.
-        
-        # Original code had a "Leader" simply buying if it had budget? 
-        # Or was it buying ONCE?
-        # The original code:
-        # if used_amt + current_price <= acc_capital:
-        #      print(f"  [{acc_name}] BUY Signal: Price {current_price}")
-        #      self._execute_trade(...)
-        
-        # This implies it buys whenever it has money? That sounds like it fills the bag immediately.
-        # Assuming that's the desired behavior for Leader.
-        
-        if allow_buy and account.balance >= current_price:
-             # Prevent spam buying? Original code didn't safeguard against buying same tick?
-             # Actually, original code relied on `used_amt`. 
-             # If `used_amt` < `acc_capital`, it bought.
-             # So it would buy until full.
-             # We will replicate this.
-             
-             print(f"  [{acc_id}] BUY Signal: Price {current_price} (Bal: {account.balance:,.0f})")
-             self._execute_trade(account, code, "BUY", current_price, 1)
+        if not allow_buy:
+            return
+
+        # Frequency check: once per day per strategy
+        today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+        if strategy_id and self._leader_last_buy_date.get(strategy_id) == today_str:
+            return
+
+        # Price range check
+        price_lower = params.get("price_lower_limit", 0)
+        price_upper = params.get("price_upper_limit", None)
+
+        if current_price < price_lower:
+            print(f"  [{acc_id}] Skip Buy: Price {current_price:,} < lower limit {price_lower:,}")
+            return
+        if price_upper is not None and current_price > price_upper:
+            print(f"  [{acc_id}] Skip Buy: Price {current_price:,} > upper limit {price_upper:,}")
+            return
+
+        # Determine quantity
+        buy_amount = params.get("buy_amount", 200000)
+        buy_quantity = params.get("buy_quantity")
+
+        if buy_quantity is not None:
+            qty_to_buy = buy_quantity
         else:
-            # print(f"  [{acc_id}] Skip Buy: Insufficient Budget ({account.balance:,.0f} < {current_price})")
-            pass
+            qty_to_buy = int(buy_amount // current_price)
+
+        if qty_to_buy > 0:
+            total_cost = qty_to_buy * current_price
+            if account.balance >= total_cost:
+                 print(f"  [{acc_id}] BUY Signal: Price {current_price}, Qty {qty_to_buy} (Total: {total_cost:,.0f} KRW, Bal: {account.balance:,.0f})")
+                 self._execute_trade(account, code, "BUY", current_price, qty_to_buy)
+                 if strategy_id:
+                     self._leader_last_buy_date[strategy_id] = today_str
 
     def process_followers(self, leader_cfg, followers_cfg, code, current_price):
         leader_id = leader_cfg["account_id"]
         if leader_id not in self.accounts: return
         leader_acc = self.accounts[leader_id]
-        
+
+        leader_ratio = leader_cfg.get("ratio", 0.40)
+        leader_buy_amount = leader_cfg["params"].get("buy_amount", 200000)
+
         # Get Leader History (Batches)
-        # Filter for BUY actions on this code
-        leader_buys = [t for t in leader_acc.history 
+        leader_buys = [t for t in leader_acc.history
                         if t["code"] == code and t["action"] == "BUY"]
-        
-        batch_size = 4
-        num_batches = len(leader_buys) // batch_size
-        
+
+        num_batches = len(leader_buys)
+
         for acc_config in followers_cfg:
             acc_id = acc_config["account_id"]
             if acc_id not in self.accounts: continue
-            
+
             account = self.accounts[acc_id]
             params = acc_config["params"]
             dip_threshold = params.get("dip", 0.01)
             target_profit = params.get("target_profit", 0.03)
-            
-            # Identify Next Batch for this follower
-            follower_buys = [t for t in account.history 
-                            if t["code"] == code and t["action"] == "BUY"]
-            
-            next_batch_idx = len(follower_buys)
-            
-            # --- Buy Logic ---
-            if next_batch_idx < num_batches:
-                # Get Avg Price of Leader's Batch
-                batch_slice = leader_buys[next_batch_idx*batch_size : (next_batch_idx+1)*batch_size]
-                if not batch_slice: continue
-                
-                avg_price_at_purchase = sum(t["price"] for t in batch_slice) / len(batch_slice)
-                
-                target_buy_price = avg_price_at_purchase * (1 - dip_threshold)
-                
-                my_target_sell = target_buy_price * (1 + target_profit)
-                
-                if current_price <= target_buy_price:
-                     print(f"  [{acc_id}] BUY Signal: {current_price} <= {target_buy_price:.0f} (Dip {dip_threshold*100}%)")
-                     
-                     if account.balance >= current_price:
-                         self._execute_trade(account, code, "BUY", current_price, 1, 
-                                           batch_ref=next_batch_idx, 
-                                           target_sell_price=my_target_sell)
-                     else:
-                         print(f"  [{acc_id}] Skip Buy: Insufficient Budget")
+            follower_ratio = acc_config.get("ratio", 0.15)
 
-            # --- Sell Logic ---
-            # Followers sell based on *individual* trade targets stored in history or computed?
-            # Original code stored `target_sell_price` in trade metadata.
-            # But Account.holdings aggregates Qty/AvgPrice.
-            # If we want to sell specific "batches" or "trades", we need to track them.
-            # Account history has the record.
-            # But `Account.sell` removes from holdings (FIFO/Avg).
-            # If followers need to sell SPECIFIC batches, `Account` class might be too simple if it averages context.
-            # however, `Account` implementation uses weighted average.
-            # If we want to sell when *current price* >= *target of specific buy*, we can scan history?
-            # BUT `Account.sell` doesn't support "sell specific lot".
-            # Simplification: Followers sell if Current Price >= Avg Price * (1 + Profit)?
-            # OR logic from original code: `target_sell = h.get("target_sell_price")`
-            # Original code's `get_open_positions` returned list of TRADES.
-            # My `Account.holdings` aggregates.
-            # This is a behavior change.
-            # To support "per-trade" selling, we might need `Account` to track lots.
-            # OR we iterate `account.history` for OPEN trades.
-            
-            # Let's check `Account` class again.
-            # `holdings` is simple aggregation.
-            # `history` has all trades.
-            # I can reconstruct "Open Lots" from history if I didn't store them explicitly.
-            # Account class doesn't track "Open" status in history explicitly (it has "action").
-            # But I can add "status" to history or separate "lots".
-            
-            # User requirement: "Accounts... keep track of transactions...".
-            # If the strategy relies on per-lot selling, I should support it.
-            # Original code `state_manager` had `status: OPEN/CLOSED`.
-            # My `Account` class `history` has `action: BUY/SELL` but I didn't implement linking.
-            
-            # I will modify logic to be:
-            # Check `holdings`.
-            # If we have holdings, we check if we should sell.
-            # The original logic: `if current_price >= target_sell`. 
-            # `target_sell` calculated at BUY time.
-            # Since I don't have per-lot tracking in `Account.holdings`,
-            # I will use `avg_price` based target for now.
-            # `target_sell = avg_price * (1 + target_profit)`
-            
-            if code in account.holdings and account.holdings[code]["qty"] > 0:
-                 avg_p = account.holdings[code]["avg_price"]
-                 
-                 # Logic adaptation: Sell if current price > Avg * (1+target)
-                 # This mirrors the intent for the aggregate position.
-                 
-                 target_price = avg_p * (1 + target_profit)
-                 if current_price >= target_price:
-                      qty = account.holdings[code]["qty"]
-                      print(f"  [{acc_id}] SELL Signal: {current_price} >= {target_price:.0f} (Avg {avg_p:.0f})")
-                      self._execute_trade(account, code, "SELL", current_price, qty)
+            # --- Per-Lot Sell Logic (process sells first so cash is available for buys) ---
+            open_lots = [t for t in account.history
+                         if t["code"] == code and t["action"] == "BUY" and t.get("status") == "OPEN"]
+
+            for lot in open_lots:
+                target_sell = lot.get("target_sell_price")
+                if target_sell and current_price >= target_sell:
+                    lot_qty = lot["qty"]
+                    print(f"  [{acc_id}] SELL Signal (Lot batch {lot.get('batch_ref')}): "
+                          f"{current_price} >= {target_sell:.0f} (Buy@ {lot['price']:,}), Qty {lot_qty}")
+                    self._execute_trade(account, code, "SELL", current_price, lot_qty,
+                                        batch_ref=lot.get("batch_ref"))
+                    lot["status"] = "CLOSED"
+
+            # --- Fallback: aggregate sell for legacy positions without status field ---
+            remaining_open = [t for t in account.history
+                              if t["code"] == code and t["action"] == "BUY" and t.get("status") == "OPEN"]
+            if (code in account.holdings and account.holdings[code]["qty"] > 0
+                    and not remaining_open):
+                avg_p = account.holdings[code]["avg_price"]
+                target_price = avg_p * (1 + target_profit)
+                if current_price >= target_price:
+                    qty = account.holdings[code]["qty"]
+                    print(f"  [{acc_id}] SELL Signal (legacy aggregate): "
+                          f"{current_price} >= {target_price:.0f} (Avg {avg_p:.0f}), Qty {qty}")
+                    self._execute_trade(account, code, "SELL", current_price, qty)
+
+            # --- Self-Cycling Buy Logic ---
+            # Which leader batches already have an OPEN lot?
+            open_batch_refs = {t.get("batch_ref") for t in account.history
+                               if t["code"] == code and t["action"] == "BUY" and t.get("status") == "OPEN"}
+
+            for batch_idx in range(num_batches):
+                if batch_idx in open_batch_refs:
+                    continue  # Already have an open lot for this batch
+
+                leader_batch = leader_buys[batch_idx]
+                leader_batch_price = leader_batch["price"]
+                target_buy_price = leader_batch_price * (1 - dip_threshold)
+
+                if current_price <= target_buy_price:
+                    # Compute proportional qty with stochastic rounding
+                    follower_buy_amount = leader_buy_amount * (follower_ratio / leader_ratio)
+                    exact_qty = follower_buy_amount / current_price
+                    base_qty = int(exact_qty)
+                    fractional = exact_qty - base_qty
+                    qty_to_buy = base_qty + (1 if random.random() < fractional else 0)
+
+                    if qty_to_buy <= 0:
+                        print(f"  [{acc_id}] Skip Buy: Stochastic round -> 0 shares "
+                              f"(amount {follower_buy_amount:,.0f} KRW)")
+                        break  # Still counts as this tick's buy attempt
+
+                    total_cost = qty_to_buy * current_price
+                    my_target_sell = current_price * (1 + target_profit)
+
+                    print(f"  [{acc_id}] BUY Signal (batch {batch_idx}): "
+                          f"{current_price} <= {target_buy_price:.0f} "
+                          f"(Dip {dip_threshold*100}% from leader {leader_batch_price:,}), "
+                          f"Qty {qty_to_buy} ({follower_buy_amount:,.0f} KRW)")
+
+                    if account.balance >= total_cost:
+                        self._execute_trade(account, code, "BUY", current_price, qty_to_buy,
+                                            batch_ref=batch_idx,
+                                            target_sell_price=my_target_sell,
+                                            status="OPEN")
+                    else:
+                        print(f"  [{acc_id}] Skip Buy: Insufficient Budget "
+                              f"({account.balance:,.0f} < {total_cost:,.0f})")
+                    break  # One buy per tick per follower
 
 
     def _execute_trade(self, account, code, action, price, qty, **kwargs):

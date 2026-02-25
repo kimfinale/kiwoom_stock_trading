@@ -238,12 +238,11 @@ def main():
     
     intervals = config.get("execution_intervals", {})
     check_interval_min = intervals.get("check_interval_minutes", 1)
-    leader_interval_min = intervals.get("leader_buy_interval_minutes", 20)
     dashboard_interval_min = intervals.get("dashboard_interval_minutes", 10)
-    
+
     print(f"Intervals:")
     print(f"  - Price/Follower Check : {check_interval_min} min")
-    print(f"  - Leader Buy Throttle  : {leader_interval_min} min")
+    print(f"  - Leader Buy Frequency : once per day (per strategy)")
     print(f"  - Dashboard Update     : {dashboard_interval_min} min")
     print("-" * 60)
 
@@ -266,7 +265,6 @@ def main():
     # Timestamps for interval tracking
     now = time.time()
     last_price_check_time = 0 # Force immediate run
-    last_leader_buy_time = 0 # Force immediate run
     last_dashboard_time = 0 # Force immediate run
     
     # File monitoring
@@ -299,16 +297,20 @@ def main():
                     # Update Intervals
                     intervals = config.get("execution_intervals", {})
                     check_interval_min = intervals.get("check_interval_minutes", 1)
-                    leader_interval_min = intervals.get("leader_buy_interval_minutes", 20)
                     dashboard_interval_min = intervals.get("dashboard_interval_minutes", 10)
-                    print(f"   Intervals Updated: Check={check_interval_min}m, Leader={leader_interval_min}m, Dash={dashboard_interval_min}m")
+                    print(f"   Intervals Updated: Check={check_interval_min}m, Dash={dashboard_interval_min}m")
             except OSError:
                 pass
 
             # --- Check Market Hours ---
             if not check_market_open() and not config.get("ignore_market_hours", False):
+                 dt_now = datetime.now()
+                 if dt_now.weekday() >= 5 or dt_now.time() >= dtime(15, 31):
+                     print(f"\n[{dt_now.strftime('%H:%M:%S')}] Market closed for the day. Exiting ...")
+                     break
+
                  if iteration % 60 == 0: # Log every minute
-                     print(f"[{datetime.now().strftime('%H:%M:%S')}] Market Closed. Waiting...", end='\r')
+                     print(f"[{dt_now.strftime('%H:%M:%S')}] Market closed. Waiting...", end='\r')
                  continue
 
             # ==============================================================================
@@ -322,15 +324,9 @@ def main():
                 current_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 print(f"\nTime: {current_str} | Tick #{iteration}")
                 
-                # Determine Leader Buy Permission
-                allow_leader_buy = False
-                if now - last_leader_buy_time >= leader_interval_min * 60:
-                    allow_leader_buy = True
-                    last_leader_buy_time = now
-                    print(f"⚡ Leader Buying ENABLED for this tick (Every {leader_interval_min} min)")
-                
                 # A. Execute Strategy (Price Check + Buy/Sell)
-                executor.execute_step(allow_leader_buy=allow_leader_buy)
+                # Leader buy frequency is managed per-strategy inside StrategyExecutor (once per day)
+                executor.execute_step(allow_leader_buy=True)
                 
                 # B. Update Snapshots (for Graph)
                 update_account_snapshots(kiwoom, accounts_map)
